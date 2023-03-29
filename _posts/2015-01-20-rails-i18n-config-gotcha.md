@@ -14,9 +14,9 @@ errors.
 After some debugging I found that the following line of configuration
 <code>config/application.rb</code> was not being respected:
 
-<code lang='ruby'>  
+```ruby
 I18n.enforce_available_locales = false  
-</code>
+```
 
 This line was introduced when the application was upgraded to Rails
 4.0.2 a year ago. At the time, as [this stackoverflow
@@ -39,8 +39,8 @@ The solution is to follow the [relevant section of the Rails
 Guides](http://guides.rubyonrails.org/v4.0.13/configuring.html#configuring-i18n)
 and configure as follows:
 
-<code lang='ruby'>  
+```ruby
 config.i18n.enforce_available_locales = false  
-</code>
+```
 
 It’s a subtle change that caught us out.
