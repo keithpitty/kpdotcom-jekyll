@@ -9,7 +9,7 @@ Yesterday I had the privilege of presenting my [Loving Legacy
 Code](http://lanyrd.com/2015/rubyconf-au/sdghmz/) talk at [RubyConf
 Australia 2015](http://rubyconf.org.au/2015) in Melbourne.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aa32c9bdd5b2571d5b8b0225d101b6488b53e39c/llc-slide-1.jpg)
+![](/assets/images/llc-slide-1.jpg)
 
 See [slides](https://speakerdeck.com/keithpitty/loving-legacy-code) and
 [video](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/loving-legacy-code-by-keith-pitty-1718).
