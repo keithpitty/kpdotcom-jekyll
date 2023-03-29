@@ -19,7 +19,7 @@ provide some recent content on this site!
 I think the following tweet from Josh Price echoes my feelings about
 RubyConf AU very well.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--14e248a4e93d14ecd59e8bedeac3dce3affdf627/rubyconf-au-2020.jpg)
+![](/assets/images/rubyconf-au-2020.jpg)
 
 Whilst I know that Josh has moved on to focus on other technologies such
 as Elixir I agree with him that there’s something very special about the
