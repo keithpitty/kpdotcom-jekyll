@@ -62,7 +62,7 @@ limited to the telephone and email. However tools such as
 [Skype](www.skype.com/) now provide plenty of scope for collaborating
 about design approaches.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--efba3e14265667ce7017e7c808aa05a55af8029f/collaboration-tools.jpg)
+![](/assets/images/collaboration-tools.jpg)
 
 Once thoughts are closer to code, collaboration via a
 [GitHub](https://github.com/) [pull

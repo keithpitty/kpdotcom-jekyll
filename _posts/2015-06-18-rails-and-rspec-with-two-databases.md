@@ -10,8 +10,7 @@ straight-forward.
 
 Recently I needed to enable a Rails 4.0.13 application which used a
 MySQL database as it’s default to also use a PostgreSQL database. Being
-a good TDD citizen, I also needed to ensure that the new tests would run
-in our CI environment.
+a good TDD citizen, I also needed to ensure that the new tests would run in our CI environment.
 
 Whilst I did find a [helpful
 post](http://blog.nistu.de/2012/03/25/multi-database-setup-with-rails-and-rspec),
@@ -23,32 +22,31 @@ what I did.
 First of all, I configured environments for the PostgreSQL database
 within <code>config/database.yml</code> as follows:
 
-<code lang='ruby'>
-
-1.  in addition to existing contents  
-    postgres: &postgresql_defaults  
-    adapter: postgresql  
-    pool: 10  
-    timeout: 60000  
-    host: localhost  
-    template: template0
+```ruby
+# in addition to existing contents  
+postgres: &postgresql_defaults  
+  adapter: postgresql  
+  pool: 10  
+  timeout: 60000  
+  host: localhost  
+  template: template0
 
 development_foo:  
-database: foo_development  
-\<\<: \*postgresql_defaults
+  database: foo_development  
+  <<: *postgresql_defaults
 
 test_foo:  
-database: foo_test  
-\<\<: \*postgresql_defaults
+  database: foo_test  
+  <<: *postgresql_defaults
 
 staging_foo:  
-database: foo_staging  
-\<\<: \*postgresql_defaults
+  database: foo_staging  
+  <<: *postgresql_defaults
 
 production_foo:  
-database: foo_production  
-\<\<: \*postgresql_defaults  
-</code>
+  database: foo_production  
+  <<: *postgresql_defaults  
+```
 
 ## Establish Connection in Model Class
 
@@ -56,13 +54,13 @@ In my case, I only needed to use one model class backed by a table from
 the extra database. Let’s imaginatively call this class
 <code>Bar</code>. So the class would be defined like this:
 
-<code lang='ruby'>  
-class Bar \< ActiveRecord::Base  
-establish_connection “#{Rails.env}\_foo”
+```ruby
+  class Bar < ActiveRecord::Base  
+    establish_connection “#{Rails.env}\_foo”
 
-1.  the rest of the class  
-    end  
-    </code>
+    #  the rest of the class  
+  end
+```  
 
 Note that you probably want to introduce an abstract class which
 establishes the connection if you have more than one model class which
@@ -83,55 +81,55 @@ on these rake tasks and, in so doing, use the existing script unchanged.
 I discovered I could do so by using the <code>Rake::Task#enhance</code>
 method. This allowed the rake db tasks to be augmented as follows:
 
-<code lang='ruby'>  
+```ruby
 namespace :db do  
-task drop_foo: :environment do  
-ActiveRecord::Tasks::DatabaseTasks.drop(foo_db_config)  
-end
+  task drop_foo: :environment do  
+    ActiveRecord::Tasks::DatabaseTasks.drop(foo_db_config)  
+  end
 
-task create_foo: :environment do  
-ActiveRecord::Tasks::DatabaseTasks.create(foo_db_config)  
-reset_connection_to_mysql_db  
-end
+  task create_foo: :environment do  
+    ActiveRecord::Tasks::DatabaseTasks.create(foo_db_config)  
+    reset_connection_to_mysql_db  
+  end
 
-namespace :structure do  
-task load_foo: :environment do  
-if File.exist?(foo_structure_filename)  
-ActiveRecord::Tasks::DatabaseTasks.structure_load(foo_db_config,
-foo_structure_filename)  
-end  
-end  
-end  
+  namespace :structure do  
+    task load_foo: :environment do  
+      if File.exist?(foo_structure_filename)  
+        ActiveRecord::Tasks::DatabaseTasks.structure_load(foo_db_config,
+          foo_structure_filename)  
+      end  
+    end  
+  end  
 end
 
 def foo_structure_filename  
-“#{Rails.root}/db/foo_structure.sql”  
+  "#{Rails.root}/db/foo_structure.sql"  
 end
 
 def foo_db_config  
-ActiveRecord::Base.configurations\[“#{Rails.env}\_foo”\]  
+  ActiveRecord::Base.configurations\["#{Rails.env}\_foo"\]  
 end
 
 def default_db_config  
-ActiveRecord::Base.configurations\[“#{Rails.env}”\]  
+  ActiveRecord::Base.configurations\["#{Rails.env}"\]  
 end
 
 def reset_connection_to_mysql_db  
-ActiveRecord::Base.establish_connection(default_db_config)  
+  ActiveRecord::Base.establish_connection(default_db_config)  
 end
 
-Rake::Task\[‘db:drop’\].enhance do  
-Rake::Task\[‘db:drop_foo’\].invoke  
+Rake::Task\['db:drop'\].enhance do  
+  Rake::Task\['db:drop_foo'\].invoke  
 end
 
-Rake::Task\[‘db:create’\].enhance do  
-Rake::Task\[‘db:create_foo’\].invoke  
+Rake::Task\['db:create'\].enhance do  
+  Rake::Task\['db:create_foo'\].invoke  
 end
 
-Rake::Task\[‘db:schema:load’\].enhance do  
-Rake::Task\[‘db:structure:load_foo’\].invoke  
+Rake::Task\['db:schema:load'\].enhance do  
+  Rake::Task\['db:structure:load_foo'\].invoke  
 end  
-</code>
+```
 
 There are a couple of things I should explain here.
 
