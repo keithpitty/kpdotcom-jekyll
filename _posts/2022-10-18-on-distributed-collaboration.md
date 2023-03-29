@@ -5,7 +5,7 @@ date: 2022-10-18
 permalink: /blog/archives/2022-10-18-on-distributed-collaboration
 ---
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBWVk9IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--22fbf96263a3c85152b8398328964790437ab2a9/chris-montgomery-smgTvepind4-unsplash.jpg)
+![](/assets/images/chris-montgomery-unsplash.jpg)
 
 Photo by <a href="https://unsplash.com/@cwmonty">Chris Montgomery</a> on
 <a href="https://unsplash.com/photos/smgTvepind4">Unsplash</a>
@@ -137,11 +137,11 @@ distributed collaboration. If you’re interested in this topic, you may
 like to delve into the following two books that I have, like many books,
 started but not finished reading:
 
--   \_[From Chaos to Successful Distributed Agile Teams: Collaborate to
-    Deliver](https://www.amazon.com.au/Chaos-Successful-Distributed-Agile-Teams/dp/1943487111/_)
+-   _[From Chaos to Successful Distributed Agile Teams: Collaborate to
+    Deliver](https://www.amazon.com.au/Chaos-Successful-Distributed-Agile-Teams/dp/1943487111/)_
     by Johanna Rothman and Mark Kilby
--   \_[Effective Remote Work: For Yourself, Your Team, and Your
-    Company](https://pragprog.com/titles/jsrw/effective-remote-work/_)
+-   _[Effective Remote Work: For Yourself, Your Team, and Your
+    Company](https://pragprog.com/titles/jsrw/effective-remote-work/)_
     by James Stanier
 
 ## Conclusion
