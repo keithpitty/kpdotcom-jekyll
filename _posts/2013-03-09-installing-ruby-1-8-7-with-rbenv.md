@@ -28,7 +28,6 @@ had done recently with RVM.
 The solution was to use configuration options to tell rbenv where to get
 readline and to not bother with installing tcl and tk:
 
-<code>  
-$ CONFIGURE_OPTS=“—with-readline-dir=$(brew —prefix readline)
-—without-tcl —without-tk” rbenv install 1.8.7-p371  
-</code>
+```
+$ CONFIGURE_OPTS="—with-readline-dir=$(brew —prefix readline) —without-tcl —without-tk" rbenv install 1.8.7-p371  
+```
