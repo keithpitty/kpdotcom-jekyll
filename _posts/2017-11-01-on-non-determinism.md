@@ -13,7 +13,7 @@ and [speak](https://www.youtube.com/watch?v=p5Qj75nJPEs#t2m15s) about it
 in 2011. I’ve stressed it’s importance many times since. Again recently
 I was moved to share it:
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2df49dc7be2e284be3d0f91b8f1de5ac95e04e12/martin-fowler-non-determinism.jpg)
+![](/assets/images/martin-fowler-non-determinism.jpg)
 
 ## Resistance
 

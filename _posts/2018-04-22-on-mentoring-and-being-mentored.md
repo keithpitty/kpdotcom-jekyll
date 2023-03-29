@@ -31,7 +31,7 @@ when [Alaina Kafkes](https://twitter.com/alainakafkes) challenged those
 in the audience of her talk about *Tackling Technical Writing* to
 publicly commit to writing about a particular topic, my response was:
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ffdf6f5501a3fdd2f069e60d9b480bdae09f2f83/rubyconfau2018-mentoring.jpg)
+![](/assets/images/rubyconfau2018-mentoring.jpg)
 
 And given that Sean was generous enough to say that he’d read what I had
 to say on this topic, it’s only fair that I put words to the screen and
@@ -93,7 +93,7 @@ strengths. Part of my envisioned framework is a skills matrix. For each
 skill there will be specialist mentors as well as a set of training
 resources.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--37c568825157f0686c0dd6bc03c443301ff0cc59/skills-matrix.jpg)
+![](/assets/images/skills-matrix.jpg)
 
 In the early stages of implementing a mentoring program for a team,
 there may be a few gaps and imbalances in this matrix. For example, a
@@ -183,7 +183,7 @@ Perhaps, in my case, as an older, experienced IT professional working
 within a small group of developers, I need to be more flexible in the
 way I seek advice.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBRQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--773689290ab85162eef68f0c51c83aed576f42ff/thinking-face.png)
+![](/assets/images/thinking-face.png)
 
 ### Relevant experience
 
@@ -230,7 +230,7 @@ specific skills?
 So, when I’m looking to be mentored, it probably makes sense to consider
 the same matrix that I proposed earlier.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--37c568825157f0686c0dd6bc03c443301ff0cc59/skills-matrix.jpg)
+![](/assets/images/skills-matrix.jpg)
 
 ## Wrapping up
 
