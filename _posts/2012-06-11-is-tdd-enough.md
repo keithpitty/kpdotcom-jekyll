@@ -19,15 +19,10 @@ on applying [SOLID design
 principles](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
 in Ruby, is well worth listening to in its entirety.
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBWdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--88fd91bf92e986b8ee40fba87dfa3553e566ac37/Sandi-Metz-SOLID-Object-Oriented-Design.jpg)](http://vimeo.com/12350535)
+[![](/assets/images/Sandi-Metz-SOLID-Object-Oriented-Design.jpg)](http://vimeo.com/12350535)
 
-<p>
-
-<a href="http://vimeo.com/12350535">2009 - Sandi Metz - SOLID
-Object-Oriented Design</a> from <a href="http://vimeo.com/goruco">Gotham
-Ruby Conference</a> on <a href="http://vimeo.com">Vimeo</a>.
-
-</p>
+_[2009 - Sandi Metz - SOLID Object-Oriented Design](http://vimeo.com/12350535)
+from [Gotham Ruby Conference](http://vimeo.com/goruco) on [Vimeo](http://vimeo.com)_
 
 As Sandi explains, central to SOLID design is avoiding dependencies by
 striving for code that is:
