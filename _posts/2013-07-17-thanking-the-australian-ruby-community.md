@@ -65,8 +65,8 @@ Unfortunately I was unable to attend the second Rails Camp, held in late
 think it is fair to say that Pat has established himself as the Rails
 Camp “champion”, spreading it to other parts of the globe including the
 UK, Denmark, Germany, USA, Poland and Spain. The only Rails Camp outside
-of Australia that I have been to was at Mt Cheeseman in New Zealand in
-2012. Of course, Pat was there!
+of Australia that I have been to was at Mt Cheeseman in New Zealand in 2012.
+Of course, Pat was there!
 
 The uninitiated reader may wonder why I’m such a fan of Rails Camps.
 Maybe that’s the subject of another post. Suffice to say that, if you’re
@@ -104,7 +104,7 @@ Crafter](https://twitter.com/crafterm), [Dylan
 Egan](https://twitter.com/dylanegan) and others were in Portland for
 RailsConf?
 
-### RubyConfAU
+### RubyConf AU
 
 Being part of the organising crew for the first [Australian Ruby
 conference](http://www.rubyconf.org.au) was a highlight of my career. It
@@ -119,7 +119,7 @@ grateful to [Richie Khoo](https://twitter.com/richiekhoo) and Pat Allan
 (again) for their hard work in establishing Ruby Australia.
 
 Even better, Josh and others have stepped up to the plate to run the
-next RubyConfAU, in Sydney in February 2014.
+next RubyConf AU, in Sydney in February 2014.
 
 ### The Future
 
