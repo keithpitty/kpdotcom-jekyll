@@ -12,7 +12,7 @@ percolate for the time being.
 Meanwhile, I thought I would write a brief post to share what I have
 been reading lately that relates to my work.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBVQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--76ce04d009fd0d34356331b59e54e64e77b7be7c/susan-yin-2JIvboGLeho-unsplash.jpg)
+![](/assets/images/susan-yin-2JIvboGLeho-unsplash.jpg)
 
 <span>Photo by
 <a href="https://unsplash.com/@syinq?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan
