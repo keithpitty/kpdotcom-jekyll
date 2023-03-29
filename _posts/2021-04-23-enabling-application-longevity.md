@@ -7,7 +7,7 @@ permalink: /blog/archives/2021-04-23-enabling-application-longevity
 
 The following tweet recently captured my attention:
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBVUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--358381475cd2ba7c3c5a3d2ccc82e715090cb014/we-dont-write-tests.png)](https://twitter.com/eduardsi/status/1381633331230601221)
+[![](/assets/images/we-dont-write-tests.png)](https://twitter.com/eduardsi/status/1381633331230601221)
 
 It has obviously struck a chord with many others because it highlights a
 truism in software development. So many applications become burdened
