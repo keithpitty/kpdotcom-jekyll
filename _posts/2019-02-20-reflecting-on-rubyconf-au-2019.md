@@ -41,7 +41,7 @@ slides](https://speakerdeck.com/keithpitty/what-were-they-thinking) for
 yourself. To give you a bit more of an idea of the content, I’ll give a
 quick overview below.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBRdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--255e6a5b6c3b91245ec8b700dd58e9bdefd9d15c/rubyconf-au-2019-kp.jpg)
+![](/assets/images/rubyconf-au-2019-kp.jpg)
 
 *Thanks to John Carney for this photo of me presenting.*
 

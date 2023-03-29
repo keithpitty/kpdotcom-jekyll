@@ -15,6 +15,7 @@ collections:
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-spaceship
 
 postcss:
   cache: false
