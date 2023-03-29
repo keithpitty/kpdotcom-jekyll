@@ -9,7 +9,7 @@ permalink: /blog/archives/2021-08-10-reflecting-on-my-retrospectives-journey
 
 It must be getting on to a decade ago now.
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBVZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--716dff78296b8c3be60860d519434d4bdcb09b96/agile-retrospectives-book.jpg)](https://pragprog.com/titles/dlret/agile-retrospectives/)
+[![](/assets/images/agile-retrospectives-book.jpg)](https://pragprog.com/titles/dlret/agile-retrospectives/)
 
 I had been freelancing, doing Ruby on Rails development for Blake
 eLearning for a few years. The size of the team had grown significantly
@@ -77,7 +77,7 @@ the Gold Coast, Mark started developing a web application that mimicked
 the team’s retro white board. Sure, in it’s initial form the tool was
 somewhat rough around the edges. But it solved my problem!
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBVdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cd3dc777ae909c916e6d8a2eacc32aedf77771ef/remoteretro.jpg)](https://remoteretro.io/)
+[![](/assets/images/remoteretro.jpg)](https://remoteretro.io/)
 
 From then on, using [RemoteRetro](https://remoteretro.io/), everyone in
 our team was able to add items to the retro board via a web browser.
@@ -102,12 +102,12 @@ towards a level where it may justify paying customers.
 
 ### A demand to pay for RemoteRetro
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBWQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2f9bff1c6499c292ca60fbb1fcfae9f301a314d4/feedback-from-myles.jpg)
+![](/assets/images/feedback-from-myles.jpg)
 
 As you can see from the tweet above, by March 2018 we were getting some
 encouraging feedback from other users of what was still a free product.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBWUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--080255429e5df19f126f05b08565112dfbb8c040/demand-from-myles.jpg)
+![](/assets/images/demand-from-myles.jpg)
 
 Not only that, Myles quite rightly pointed out that users should have
 the opportunity to pay for RemoteRetro!
@@ -180,7 +180,7 @@ constructive way.
 Unsurprisingly, I still feel that I have much to learn about
 retrospectives.
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBWZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--49317c4f80686388320335792a2bdc6593665a43/retrospective-antipatterns.jpg)](https://www.informit.com/store/retrospectives-antipatterns-9780136823360)
+[![](/assets/images/retrospective-antipatterns.jpg)](https://www.informit.com/store/retrospectives-antipatterns-9780136823360)
 
 Several years ago, at a YOW! conference, I recall hearing [Aino Vonge
 Corry](https://www.linkedin.com/in/ainovongecorry/) speak passionately
