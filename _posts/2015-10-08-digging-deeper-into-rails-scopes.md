@@ -24,41 +24,41 @@ of the Rails <code>scope</code> method in
 ## Implementation Details
 
 The implementation is as follows:  
-<code lang='ruby'>  
+
+```ruby
 def scope(name, body, &block)  
-unless body.respond_to?(:call)  
-raise ArgumentError, ‘The scope body needs to be callable.’  
-end
+  unless body.respond_to?(:call)  
+    raise ArgumentError, 'The scope body needs to be callable.'
+  end
 
-if dangerous_class_method?(name)  
-raise ArgumentError, “You tried to define a scope named \\”#{name}\\ ”
-\\  
-“on the model \\”#{self.name}\\“, but Active Record already defined ”
-\\  
-“a class method with the same name.”  
-end
+  if dangerous_class_method?(name)  
+    raise ArgumentError, "You tried to define a scope named \"#{name}\" " \
+      "on the model \"#{self.name}\", but Active Record already defined " \
+      "a class method with the same name."
+  end
 
-extension = Module.new(&block) if block
+  extension = Module.new(&block) if block
 
-singleton_class.send(:define_method, name) do \|\*args\|  
-scope = all.scoping { body.call(\*args) }  
-scope = scope.extending(extension) if extension
+  singleton_class.send(:define_method, name) do \|\*args\|  
+    scope = all.scoping { body.call(\*args) }  
+    scope = scope.extending(extension) if extension
 
-scope \|\| all  
+    scope || all  
+  end  
 end  
-end  
-</code>
+```
 
 Now let’s consider this implementation in conjunction with the following
 scope:  
-<code lang='ruby'>  
-class Article \< ActiveRecord::Base  
-scope :created_before, -\>(time) { where(“created_at \< ?”, time) }  
+
+```ruby
+class Article < ActiveRecord::Base  
+  scope :created_before, ->(time) { where("created_at < ?", time) }  
 end  
-</code>
+```
 
 In this example, <code>:created_before</code> is interpreted as
-<code>name</code> and <code>-\>(time) { where(“created_at \< ?”, time)
+<code>name</code> and <code>->(time) { where("created_at < ?", time)
 }</code> as <code>body</code>.
 
 ### Block, Proc or Lambda?
