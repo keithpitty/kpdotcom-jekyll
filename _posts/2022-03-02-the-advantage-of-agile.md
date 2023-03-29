@@ -5,7 +5,7 @@ date: 2022-03-02
 permalink: /blog/archives/2022-03-02-the-advantage-of-agile
 ---
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBXQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--193a26fad4a51752209997147c96391136eb9460/cs-advantage-of-agile.jpg)
+![](/assets/images/cs-advantage-of-agile.jpg)
 
 It’s been a few years since my company has traded so I’ve finally
 decided to shut it down. Before putting its website to rest, I’ve
@@ -142,7 +142,7 @@ business. This is part and parcel of an iterative approach to software
 development which accepts that collective learning takes place as
 software is used.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBXUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--94e211caf058fef70b7b9d8e537cbe234ebb984e/agile-iterations.jpg)
+![](/assets/images/agile-iterations.jpg)
 
 Coupled with this iterative approach to planning, Agile practices such
 as automated testing, refactoring and continuous integration are applied
