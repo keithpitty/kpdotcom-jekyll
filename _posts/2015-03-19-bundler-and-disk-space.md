@@ -24,15 +24,13 @@ use at work. Some of these are large. All of them are referred to in
 Gemfiles by their GitHub repositories, or in other words they are *git
 referenced gems* defined in the Gemfile like this:
 
-<code lang='ruby'>  
-gem ‘blake-data-source’, git:
-‘git@github.com:blake-education/blake-data-source.git’, branch:
-‘develop’  
-</code>
+```ruby
+gem 'blake-data-source', git: 'git@github.com:blake-education/blake-data-source.git', branch: 'develop'  
+```
 
 The result was this:
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c8085fe5a731dc3f12ee3f06de1c9cc16bcb893d/ncdu-gems.jpg)
+![](/assets/images/ncdu-gems.jpg)
 
 That’s right. The gems for Ruby 2.1.2 were taking up 10.5GB of disk
 space! Looking closely, I could see that there were many old versions of
@@ -73,17 +71,17 @@ clean —force</code> and then change to using the <code>bundle install
 [documentation](http://bundler.io/v1.8/bundle_install.html) says, the
 <code>—path</code> option allows you to:
 
-> Specify a different path than the system default ($BUNDLE_PATH or
-> $GEM_HOME). Bundler will remember this value for future installs on
+> Specify a different path than the system default (<code>$BUNDLE_PATH</code> or
+> <code>$GEM_HOME</code>). Bundler will remember this value for future installs on
 > this machine
 
 And, since I am in the habit of using bash aliases and
 [tmuxinator](https://github.com/tmuxinator/tmuxinator), I am now using
 aliases like this to start project coding sessions:
 
-<code>  
+```
 alias mkp=‘bundle —path ~/.appgems/kpdotcom —clean && mux kp’  
-</code>
+```
 
 In this way I should be able to keep the disk space used by RubyGems
 under control. It also ensures that dependent gem versions are installed
