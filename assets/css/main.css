@@ -6,6 +6,9 @@
 p {
   @apply font-serif py-2 leading-snug;
 }
+.code {
+  @apply font-mono text-sm;
+}
 h1 {
   @apply text-4xl font-bold text-blue-950 pt-3 pb-3;
 }

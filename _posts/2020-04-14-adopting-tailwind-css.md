@@ -13,11 +13,11 @@ the site to be responsive to different devices.
 
 However, time moves on. Almost two years ago I tweeted:
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--50b49b0478af39bc2dd0b113bde200bc3e2307cc/bootstrap-alternative.jpg)
+![](/assets/images/bootstrap-alternative.jpg)
 
 And this was the reply that interested me most:
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--19c0ad3270ae5c8980b49c984ac69ab03c53df76/sebastian-porto-tailwind-css.jpg)
+![](/assets/images/sebastian-porto-tailwind-css.jpg)
 
 More recently, at this year’s RubyConf AU opening party, my friend Josh
 Price was extolling the virtues of [Tailwind
@@ -52,20 +52,15 @@ customizable, low-level CSS framework”.
 ### Build up Tailwind CSS Styles
 
 The next phase was one of experimentation. In some cases, such as for my
-Rails layouts, it involved applying Tailwind styles directly to <code>
-
-<div>
-
-</code> tags. This was the first time I started to realise that Tailwind
+Rails layouts, it involved applying Tailwind styles directly to <code><div></code> tags. 
+This was the first time I started to realise that Tailwind
 adopts a mobile-first approach. For example, consider the following:
 
-<code>
-
-<div class="block lg:hidden">
-<!-- other tags -->
-</div>
-
-</code>
+{% highlight html %}
+	<div class="block lg:hidden">
+	<!-- other tags -->
+	</div>
+{% endhighlight %}
 
 The significance of <code>lg:hidden</code> is that this tag will be
 hidden for devices of size <code>lg</code> and above where
@@ -80,11 +75,11 @@ utilities styles, this is where I built up a list of styles to apply to
 various tags and classes. As a simple example, my first custom
 definition in this file is:
 
-<code>  
-p {  
-@apply font-serif py-2 leading-snug;  
-}  
-</code>
+{% highlight css %}
+	p {  
+		@apply font-serif py-2 leading-snug;  
+	}  
+{% endhighlight %}
 
 Translated, this means that for paragraphs, I apply Tailwind’s
 <code>font-serif</code>, <code>py-2</code> and <code>leading-snug</code>
@@ -98,11 +93,11 @@ very helpful.
 Tailwind styles can also be applied to classes, as in the following
 example.
 
-<code>  
-.error {  
-@apply text-red-700 pb-2;  
-}  
-</code>
+{% highlight css %}
+	.error {  
+		@apply text-red-700 pb-2;  
+	}  
+{% endhighlight %}
 
 I’ll leave you to explore the
 [documentation](https://tailwindcss.com/docs) this time to figure out
@@ -116,11 +111,11 @@ problem I used the [Tailwind CSS Custom Forms
 plugin](https://tailwindcss-custom-forms.netlify.com/). I was then able
 to apply styles from that plugin as follows:
 
-<code>  
-form input {  
-@apply form-input mt-1 block w-full;  
-}  
-</code>
+{% highlight css %}
+	form input {  
+		@apply form-input mt-1 block w-full;  
+	}  
+{% endhighlight %}
 
 ### Complete transfer from Asset Pipeline to Webpacker
 
@@ -139,9 +134,9 @@ when I understood the reason why the CodeRay styles that I use for code
 syntax highlighting were no longer working. After all, the following
 code snippet in my layout has a clue:
 
-<code>  
-\<%= stylesheet_pack_tag “application” %\>  
-</code>
+{% highlight erb %}
+	<%= stylesheet_pack_tag “application” %>
+{% endhighlight %}
 
 The word “pack”, of course, indicates that the styles are managed by
 Webpacker.
@@ -151,7 +146,7 @@ application.
 
 ## The Verdict
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--87c5e10c5c7b8b3abbf13a9a212a33ce2dce91da/tailwindcss.jpg)
+![](/assets/images/tailwindcss.jpg)
 
 I now understand why Sebastian and Josh gave Tailwind CSS such
 enthusiastic endorsements.
