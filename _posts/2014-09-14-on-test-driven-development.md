@@ -19,7 +19,7 @@ a Rails Girls event.
 As you can see from the Twitter exchange below, I also cheekily asked
 Rosie whether she had all her tests passing.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f9e47aa0d380bde2afad18eed49d988aba29c8f3/tdd_provocation.jpg)
+![](/assets/images/tdd_provocation.jpg)
 
 I didn’t expect that Rosie would have ventured down the TDD path yet but
 I guess I couldn’t resist asking the question. The [value of automated
@@ -91,12 +91,12 @@ development who may have been wondering what all the fuss is about TDD.
 There is much more to say about testing and refactoring but for now I’ll
 end this post by recommending:
 
--   \_[Rails 4 Test Prescriptions: Build a Healthy
-    Codebase](https://pragprog.com/book/nrtest2/rails-4-test-prescriptions_)
+-   _[Rails 4 Test Prescriptions: Build a Healthy
+    Codebase](https://pragprog.com/book/nrtest2/rails-4-test-prescriptions)_
     by Noel Rappin
--   \_[Refactoring: Ruby
-    Edition](http://www.amazon.com/gp/product/0321984137_) by Jay
+-   _[Refactoring: Ruby
+    Edition](http://www.amazon.com/gp/product/0321984137)_ by Jay
     Fields, Shane Harvie and Martin Fowler with Kent Beck
--   \_[Growing Object-Oriented Software, Guided by
-    Tests](http://www.growing-object-oriented-software.com/_) by Steve
+-   _[Growing Object-Oriented Software, Guided by
+    Tests](http://www.growing-object-oriented-software.com/)_ by Steve
     Freeman and Nat Pryce
