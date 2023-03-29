@@ -70,14 +70,14 @@ Bearing this in mind, let’s read what Robert C. Martin says in [*97
 Things Every Programmer Should
 Know*](http://shop.oreilly.com/product/9780596809492.do):
 
-bq.. “One of the most foundational principles of good design is:
+> “One of the most foundational principles of good design is:
 
-*Gather together those things that change for the same reason, and
-separate those things that change for different reasons.*
+>> **Gather together those things that change for the same reason, and
+>> separate those things that change for different reasons.**
 
-This principle is often known as the *single responsibility principle*,
-or SRP. In short, it says that a subsystem, module, class, or even
-function, should not have more than one reason to change.”
+> This principle is often known as the *single responsibility principle*,
+> or SRP. In short, it says that a subsystem, module, class, or even
+> function, should not have more than one reason to change.”
 
 In other words, *responsibility* is equated to *having only one reason
 to change*. As someone else present at my rorosyd talk said in response
