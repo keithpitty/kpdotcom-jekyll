@@ -11,7 +11,7 @@ interest to me is that this month’s Sydney
 [Rorosyd](https://www.meetup.com/Ruby-On-Rails-Oceania-Sydney/events/269028394/)
 meetup will focus on how COVID-19 has affected workers.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--136e30cde49308422043ec69c4f06a88e28c6c90/rorosyd.jpg)
+![](/assets/images/rorosyd.jpg)
 
 The meetup will include an interactive forum about “issues,
 opportunities, and challenges during the pandemic”.
