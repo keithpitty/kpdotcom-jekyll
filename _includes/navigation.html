@@ -1,7 +1,9 @@
-<nav>
+<ul class="list-reset lg:flex justify-end flex-1 items-center">
   {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-      {{ item.name }}
-    </a>
+    <li>
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="text-white hover:text-white pr-4"{% else %}class="text-blue-300 hover:text-white pr-4"{% endif %}>
+        {{ item.name }}
+      </a>
+    </li>
   {% endfor %}
-</nav>
+</ul>

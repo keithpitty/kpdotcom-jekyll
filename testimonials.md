@@ -4,6 +4,8 @@ title: Testimonials
 permalink: /testimonials/
 ---
 
+# Testimonials
+
 If you would like to talk with one of my referees, please [contact me](/contact). Meanwhile, please read on to find out what others have had to say about my work.
 
 {% for testimonial in site.testimonials %}

@@ -1,12 +1,37 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="me" href="https://fosstodon.org/@keithpitty">
     <title>{{ page.title }}</title>
 		<link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico">
   </head>
   <body>
-    {% include navigation.html %}
-    {{ content }}
+    <div class="w-screen bg-blue-950">
+      <div class="container mx-auto bg-blue-950 px-12 py-4">
+        <nav class="flex items-center justify-between flex-wrap">
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a href="#" class="font-thin text-xl tracking-tight text-blue-200">Keith Pitty</a>
+          </div>
+          <div class="block lg:hidden">
+            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-blue-200 border-blue-200 hover:text-white hover:border-white lg:hidden">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+            {% include navigation.html %}
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container mx-auto px-12 py-6">
+      {{ content }}
+    </div>
+    <div class="container mx-auto px-12 pb-6">
+      <p>&copy; {{ site.time | date: '%Y' }} Keith Pitty, all rights reserved.</p>
+    </div>
   </body>
 </html>
