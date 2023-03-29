@@ -1,0 +1,208 @@
+---
+layout: post
+title: The Advantage of Agile
+date: 2022-03-02
+permalink: /blog/archives/2022-03-02-the-advantage-of-agile
+---
+
+![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBXQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--193a26fad4a51752209997147c96391136eb9460/cs-advantage-of-agile.jpg)
+
+It’s been a few years since my company has traded so I’ve finally
+decided to shut it down. Before putting its website to rest, I’ve
+noticed that one old blog post has, in my opinion, stood the test of
+time.
+
+More than ten years since I posted that article, I consider it still
+relevant. So, dear reader, read on to find out what I wrote back in
+2011, with minor modifications to reflect the fact that it is now 2022!
+
+## Introduction
+
+So you’d like some software? And you need it built to your custom
+specifications. You know what you want so the next question is obvious.
+How much will it cost?
+
+Hold on. Not so fast! Unless the requirements are trivial, assumptions
+about what software needs to do and the estimation of how much it will
+cost are far from straightforward.
+
+## Lessons from Experience
+
+Allow me to illuminate by way of reminiscing.
+
+### Requirements “Nailed” Up Front
+
+In the 1980s and 1990s, I had the privilege to work on many projects
+that followed a traditional “waterfall” process. I say privilege,
+because there is nothing like learning from experience. The more
+projects I worked on that followed this approach, the more it became
+clear to me how flawed such an approach was.
+
+One such project in the 1990s for a major Australian financial
+institution involved the collaboration of several external companies in
+addition to coordination amongst staff responsible for nearly ten
+internal systems.
+
+When I joined the project, it was already in catch-up mode. As a
+contract programmer I was not privy to the cost estimates and
+negotiations. However, I was well positioned to observe as the product
+was guided, eventually, into production. On the plus side, the
+development processes, especially with respect to testing, were very
+thorough. However, the whole project was conducted using a “waterfall”
+methodology. In other words, it was assumed that there would be one
+development cycle that progressed from requirements-gathering through
+analysis, design and construction, eventually to deployment.
+
+As it turned out, once we started testing the application as a whole,
+there was a period lasting many months during which assumed requirements
+were tested, challenged and in many cases modified. Added to that,
+because the original estimate was being exceeded, there was pressure to
+skimp during the testing phases.
+
+The reality was that, at a detailed level, it had not been possible to
+“nail” the requirements up front.
+
+### Agile with Best Intentions
+
+Several years ago I worked on a web application project that became
+known as “the Scottish project”, a Shakespearian reference that gives an
+inkling to the problems that beset it. Despite our best intentions to
+use Agile practices to the mutual benefit of the customer and our
+employer, a simple twofold problem jeopardised the project from the
+outset.
+
+Firstly, try as we did, we could not get anywhere near sufficient
+involvement from the nominated customer representative. Secondly, he had
+never previously been involved in a software development project of any
+complexity. Little wonder we had difficulty in managing the requirements
+and acceptance of the application, let alone the expectations of the
+client.
+
+It is instructive to reflect on the causes of failure for this project.
+We had used Agile practices, which included planning and delivering in
+an iterative fashion as well as test-driven development and pair
+programming. However, we failed to gain engagement from the client.
+Perhaps we should have educated the client more thoroughly about how
+crucial his role was in the project. Internally we followed the
+“refactor mercilessly” edict but did we explain well enough how this
+would benefit the customer? On the other hand it is possible he was
+never going to listen until it was too late.
+
+## Waterfall Pitfalls
+
+The traditional “waterfall” approach to software development, which
+dates from more than fifty years ago
+<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup>, includes the
+following characteristics:
+
+-   An attempt to gather and document all the requirements up front
+-   Treatment of the initial estimate as a fixed-price quotation
+-   Documentation of the design before doing any coding
+-   User acceptance testing only carried out at the end of the project
+-   Changes in requirements managed as formal requests
+-   A contractual rather than collaborative approach
+
+What’s wrong with this approach?
+
+Fundamentally, the answer is that such an approach is unrealistic.
+
+There is something unique about software. It’s not similar to building
+bridges or computer hardware. It’s more abstract. Inevitably, more is
+learned once software is delivered, even in immature form, and used.
+Unforeseen consequences of requirements or design decisions often only
+become evident during testing and production use.
+
+## Agile Advantages
+
+Rather than pretending that a software development project can neatly
+fit into a “waterfall” model, an Agile approach acknowledges that
+software is complex. It embraces the likelihood of changes in
+requirements and understanding. It recognises that building software is
+a journey of knowledge discovery.
+
+Agile planning splits the project up into several iterations. The length
+of iteration is arbitrary but two-week iterations are not uncommon.
+Ideally, each iteration involves a delivery, even if not into a
+production environment.
+
+Assuming that features have been prioritised so that the most valuable
+are delivered first, it should be possible to choose a subset of
+features that can form an early production deployment, or at least be
+production-ready.
+
+The adoption of an Agile approach to software development planning is
+now well supported by software tools. Pivotal Tracker
+<sup class="footnote" id="fnr2"><a href="#fn2">2</a></sup> is, in my
+view, an excellent example.
+
+Central to Agile is the acceptance that, as software is used, new
+possibilities for improvement will be envisaged. Some of these will
+attract an agreed high priority due to their perceived advantage to the
+business. This is part and parcel of an iterative approach to software
+development which accepts that collective learning takes place as
+software is used.
+
+![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBXUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--94e211caf058fef70b7b9d8e537cbe234ebb984e/agile-iterations.jpg)
+
+Coupled with this iterative approach to planning, Agile practices such
+as automated testing, refactoring and continuous integration are applied
+as the user stories for each iteration are developed.
+
+## Managing Client Expectations
+
+Given that we have more than fifty years of “waterfall baggage” to
+overcome, software developers need to explain the benefits of Agile to
+customers. These include:
+
+-   delivering software early and frequently
+-   delivering features with the highest value first
+-   enabling valuable software to be delivered effectively by embracing
+    changes in requirements and understanding
+-   not wasting time and money on features that turn out to be of little
+    or no value
+-   enabling better financial decisions via early feedback from software
+    use
+-   a constructive, collaborative relationship between developer and
+    customer
+
+A successful software development project will involve some give and
+take, mutual recognition of software complexity and the need to
+collaborate. Continuous communication between the developer and the
+client is crucial. A lack of commitment to this dialogue, as alluded to
+earlier in this article, is likely to lead to project failure.
+
+## Fine-tuning Agile
+
+It is worth reflecting on the [Manifesto for Agile Software
+Development](http://agilemanifesto.org/) which was published 21 years
+ago. The originators emphasised that through uncovering better ways of
+developing software they came to value:
+
+-   Individuals and interactions over processes and tools
+-   Working software over comprehensive documentation
+-   Customer collaboration over contract negotiation
+-   Responding to change over following a plan
+
+Inherent in these values is the recognition that software development
+projects involve a wide range of groups of individuals. People differ
+and the dynamics of groups of people differ. As such, whilst adhering to
+core Agile practices is valuable, it is also important for each group to
+be flexible enough to adapt Agile practices to their situation.
+
+### Footnotes
+
+<p class="footnote" id="fn1">
+
+<a href="#fnr1"><sup>1</sup></a> “What software people must do is to
+adopt the same engineering practices that are successfully deployed by
+us hardware engineers” <em>Bell Labs 1968</em>, quoted by Rob Thomsett
+in <em>Is Business Ready For Agile?</em>, Agile Australia 2011.
+
+</p>
+<p class="footnote" id="fn2">
+
+<a href="#fnr2"><sup>2</sup></a> The reference to Pivotal Tracker is
+certainly dated. For some years now my favoured planning tool has been
+Trello.
+
+</p>

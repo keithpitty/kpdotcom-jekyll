@@ -1,0 +1,5 @@
+---
+layout: none
+heading: Senior Consultant, Advanced Software Engineering Pty Ltd (1997 - 1999)
+---
+<p>Amongst a variety of assignments during my time with ASE, major clients included Qantas and Woolworths. I assisted a Qantas software infrastructure team as they migrated from CSP to VisualAge Generator. In particular, I taught members of the team the fundamentals of the Smalltalk programming language. For Woolworths, I managed a team of ASE consultants as we developed a Bank Reconciliation system using COBOL/CICS/DB2 and demonstrated the value of Micro Focus software tools. Within ASE I managed the improvement of business procedures as part of the implementation of a Quality Management System. I also provided pre-sales support for Object-Oriented development tools such as VisualAge for Java, Toplink for Java and Simply Objects.</p>

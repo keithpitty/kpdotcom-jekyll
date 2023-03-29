@@ -1,0 +1,34 @@
+---
+layout: post
+title: Site Upgrade
+date: 2008-10-13
+permalink: /blog/archives/2008-10-13-site-upgrade
+---
+
+In recent months I’ve had a desire to improve both the appearance and
+functionality of this site. On the one hand I was never really happy
+with the old colour scheme and overall visual design. And I’ve always
+wanted to make the site more interactive but held off until now.
+
+The catalyst for actually doing the design and development for the
+upgrade was the recent [Web Directions South
+08](http://south08.webdirections.org/) conference. One thing I liked
+about WDS08 was the way it was divided into Design, Development and
+Business streams. It afforded a software developer like me the
+opportunity to gain more insight into web design skills as well as learn
+more about tools for development.
+
+When I’m developing software for the web, I feel much more flow when I’m
+happy with the appearance of the site. Having been inspired by what I
+learnt about web design at WDS08, just under a week ago I started on the
+redesign. Jason Beaird’s book [*The Principles of Beautiful Web
+Design*](http://www.principlesofbeautifulwebdesign.com/) was invaluable
+as I followed his advice on Layout and Composition, Colour, Texture,
+Typography and Imagery.
+
+Once I’d competed the redesign, I felt on a roll so decided to implement
+a blog. Whilst there are still features I’d like to add to it, what I
+have so far will suffice to launch it.
+
+So, there you have it. Improved design. More interactive. All
+constructive feedback is welcome.

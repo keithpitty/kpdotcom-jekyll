@@ -1,0 +1,19 @@
+---
+layout: post
+title: Reflecting on JAOO Sydney 2009
+date: 2009-05-11
+permalink: /blog/archives/2009-05-11-reflecting-on-jaoo-sydney-2009
+---
+Thanks to "Dave Thomas":http://www.davethomas.net/ the "JAOO conference was recently held Sydney again.":http://jaoo.com.au/sydney-2009/ As he was introducing himself before his talk about Application Development and Deployment in the Cloud, Dave remarked that "he was responsible for all the bad things about JAOO". Not much fell into this category and I'm sure Dave was responsible for many of the good things, such as attracting many excellent speakers.
+
+As expected Dave demonstrated his vast knowledge of software and gave me much to ponder concerning likely trends over the coming years.
+
+Among other talks that inspired me at JAOO were both Avi Bryant's talks, especially his "Speeding Ducks" talk about how it is possible to improve Ruby's speed through the use of techniques such as native code generation and inline caching. Patrick Lindsay's title for his iPhone dev talk was, as he would freely admit, somewhat misleading. He did cheat a little to enable him to finish building his app within 45 minutes! Glenn Vanderburg's talk about Fuzz Testing has encouraged me to give "Tarantula":http://github.com/relevance/tarantula/tree/master a try.
+
+So far I've given a few examples of technical talks at JAOO that I valued.  The presentation that inspired me the most was one by "Linda Rising":http://lindarising.org/ entitled _"Hardwired for deception means trouble with estimates!"_ Linda built up her argument by providing examples of studies that have shown how we "naturally deceive ourselves and others - constantly". Linda left it until the end of her talk to relate these findings back to software development but by then the message should have been clear to anyone who was prepared to accept the evidence:
+
+bq. *"A strong tendency to ignore previous feedback and persist in overconfidence in their own estimates have been observed in software development."*
+
+As Linda concluded, the only sensible way out is to follow an Agile approach that uses small steps, experimentation, a preparedness to learn from both success and failure, involves others and incorporates retrospectives and openness.
+
+I love learning technical stuff about software development but always find it refreshing to hear people-focussed talks from experienced practitioners like Linda Rising.

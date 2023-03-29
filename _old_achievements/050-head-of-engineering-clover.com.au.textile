@@ -1,0 +1,26 @@
+---
+layout: none
+heading: Head of Engineering, Clover.com.au (2019 - 2020)
+---
+In September 2019 I took over the role of Head of Engineering.
+
+My work included:
+
+* supporting preparations for the transition from Clover's to SuperEd's licence
+* upgrading the Trading Elixir application in preparation for Clover's acquisition by SuperEd
+* performance tuning
+* scoping high-level feature requests
+* facilitating and contributing to technical upgrades
+* facilitating collaborative high-level planning with the business
+* managing the launch of a new advisor's use of Clover's SAAS platform
+* providing technical leadership
+* managing members of the development team
+* maintaining and enhancing the core of Clover's platform using Ruby on Rails, PostgreSQL, GraphQL, React and Redux
+* providing DevOps support via tools such as Buildkite, Heroku, AWS and Terraform
+* contributing to and facilitating completion of the multi-tenancy upgrade to the Clover platform
+* managing the relationship with a third party development partner
+* supporting and enhancing the Trading application using Elixir, Ecto and Phoenix
+* creating architecture model diagrams for the platform using Structurizr
+* facilitating technical knowledge sharing
+* reviewing developers' work
+* recruiting developers

@@ -1,0 +1,23 @@
+---
+layout: post
+title: Ten Years On
+date: 2010-02-10
+permalink: /blog/archives/2010-02-10-ten-years-on
+---
+p. Ten years is a long time in technology.
+
+p. Recently, on New Year's Day, whilst waiting for the Spirit of Tasmania to leave Devonport after a family holiday, I was killing time on Twitter. Several tweets with the tag #10yearsago set me thinking. For a start, ten years ago I'm sure I wouldn't have dreamed of using an application like Twitter on a device like an iPhone.
+
+p. Turning my thoughts back in time, I wondered what was significant about my programming career at the turn of the century? After a little thought and stroking of my greying beard my response was that "10 years ago I was leaving mainframes behind and about to enter the world of EJBs.":http://twitter.com/keithpitty/status/7264608249 For me that was quite a milestone. After earning a living within the realm of IBM mainframe programming since 1983 and delving into object-orientation and the emerging world of web development during the 1990s, the transition to working full-time with Servlets and Enterprise JavaBeans was an exciting step.
+
+p. Fast forward to the present and it would appear that I have left the Enterprise Java world behind. Over the last couple of years I haven't used Java in anger, instead using "Ruby":http://www.ruby-lang.org/en/ as my language of choice in conjunction with frameworks like "Rails":http://rubyonrails.org/ and "Sinatra":http://www.sinatrarb.com/ for developing web applications. 
+
+p. You may have noticed that I've only mentioned server-side technologies so far. This is not just because I have felt more at home developing server-side rather than client-side software. When I started down my path of developing web applications, "JavaScript":http://en.wikipedia.org/wiki/JavaScript was the subject of scorn for valid reasons that I won't elaborate on here. However, in 2010 I can see that JavaScript is definitely growing in importance. Developer-friendly libraries such as "JQuery":http://jquery.com/ that have been well tested on all major browsers have changed what JavaScript brings to the table. "Ajax":http://www.adaptivepath.com/ideas/essays/archives/000385.php has earned it's place in web applications. "Raphaël":http://raphaeljs.com/ is an example of sexy visual effects that can be added to a site via a JS library.
+
+p. So I have becoming aware that I need to focus more on improving my JavaScript skills to better equip me to enhance user experiences of web applications via JS that runs in a web browser.
+
+p. But it turns out that my reasons to learn more about Javascript aren't confined to web browsers. Late last year I became aware of "Node.js":http://nodejs.org/, which enables the development of event-driven servers using JavaScript. I've barely scratched the surface but I know that others, like "Simon Willison":http://simonwillison.net/2009/Nov/23/node/, are very excited by Node.
+
+p. Meanwhile, I'm going back to fundamentals and have started reading "_PPK on JavaScript_":http://www.quirksmode.org/book/ to give me a more solid basis on which to build my JS skills.
+
+p. So ten years since I left mainframes behind to enter the world of EJBs I love programming in Ruby and am giving more focus to JavaScript. As for trips down memory lane, maybe another time I'll write about the technology I was using 20 years ago...

@@ -1,0 +1,184 @@
+---
+layout: post
+title: Enabling Application Longevity
+date: 2021-04-23
+permalink: /blog/archives/2021-04-23-enabling-application-longevity
+---
+
+The following tweet recently captured my attention:
+
+[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBVUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--358381475cd2ba7c3c5a3d2ccc82e715090cb014/we-dont-write-tests.png)](https://twitter.com/eduardsi/status/1381633331230601221)
+
+It has obviously struck a chord with many others because it highlights a
+truism in software development. So many applications become burdened
+with being cumbersome to maintain because insufficient priority has been
+given to enabling them to be tested within a practical time-frame.
+
+## More on this theme
+
+This is a theme that was also highlighted recently in an article in the
+Australian Computer Society’s *Information Age* entitled [*Software
+testing is slowing
+transformation*](https://ia.acs.org.au/content/ia/article/2021/software-testing-is-slowing-transformation.html).
+This article cited a report by Tricentis that found that the average
+time software testers spent manually checking “the functioning of every
+element to ensure that the quality and reliability of the whole solution
+have been maintained” is now taking an average of 23 days.
+
+Obviously the reliance on manual quality assurance testing does not
+enable quick development and deployment of changes to applications.
+
+Unsurprisingly, the *Information Age* article goes on to emphasise the
+importance of automated testing.
+
+> “Automated software testing has emerged as a key tool to make this
+> happen, with increasingly intelligent, AI-driven tools able to source
+> human-written source code for changes, dependencies, and even
+> potential security issues.
+
+> Few companies are achieving the greater than 75 per cent automation
+> rate that signifies mature software development processes, the report
+> notes, while most lack supporting testing technology like service
+> virtualisation and test data management.”
+
+## So What?
+
+What’s the point of this post? Essentially, I want to draw attention to
+the cost of maintaining an application. As has been acknowledged many
+times previously, the cost of maintaining an application is many times
+the cost of its initial development.
+
+Once an application has first been deployed to production, if it is to
+stand a chance of being successful into the future, careful
+consideration needs to be given to how to enable it to be maintained in
+a sustainable fashion.
+
+## When do we need to consider application longevity?
+
+Before it is too late!
+
+If we observe what Ward Cunningham’s original wiki had to say about
+[Technical Debt](http://wiki.c2.com/?TechnicalDebt), one of the key
+statements was:
+
+> “Don’t let the debt build up. Everyone knows the list will never be
+> addressed. Remove cruft as you go. Build simplicity and clarity in
+> from the beginning, and never relent in keeping them in.”
+
+So, as a development team, in conjunction with the business, we need to
+deliberately focus on enabling application longevity from early in the
+piece. The longer we leave it, the harder it will be to recover the
+technical debt.
+
+Too often, this lesson is ignored.
+
+## What will enable an application to last and thrive?
+
+### Automated tests
+
+As the earlier tweet and ACS article emphasised, an absence of automated
+testing inevitably leads to a dependence on lengthy, manual testing.
+Given the fact that automated testing and continuous integration have
+been long-standing practices, there is no excuse for bypassing them.
+
+The alternative is, whichever way you consider it, a significant
+impediment.
+
+In one scenario, the team is faced with time-consuming, error-prone
+manual testing whenever a change is to be considered for deployment. Or,
+worse still, changes that would otherwise improve the internal design of
+the application or improve its business function, are not delivered at
+all due to a lack of confidence that the application will not break.
+
+There will be circumstances when years pass and the application has not
+been given the benefit of automated tests. If this is the case, it may
+not be too late. A decision can still be made to start building
+automated tests and a CI infrastructure. However, this is likely to
+require significant persuasion that the investment is worth it.
+
+### A commitment to refactoring
+
+Before I go any further, let me be clear. Refactoring implies automated
+testing. Too often I have heard developers talk about their intention to
+“refactor” a part of a codebase when there are no automated tests. As
+Martin Fowler put it in the subtitle of his *Refactoring* book back in
+2000, it is *Improving the Design of Existing Code*.
+
+Automated tests are required to ensure that the behaviour of the
+existing code remains the same as the internal design is improved.
+
+Having made that point, it is important to recognise that a codebase is
+liable to decay over time. Quick fixes can be applied without concern
+for long-term maintainability. Developers new to a codebase can solve
+problems without adhering to patterns already established in the
+codebase. Many other factors can lead to code that is not easy to
+maintain.
+
+So, especially when a part of the codebase is being changed to add a
+business feature, care should be taken to refactor, to improve the
+design of existing code.
+
+### A commitment to updating dependencies
+
+When an application is first launched, it is likely to depend upon
+recent versions of the operating system, database management system, web
+server, web framework, programming language and various open source
+libraries. It is also likely that, at this time, very little attention
+is paid to the fact that the versions of these dependent software
+systems and libraries are recent.
+
+Shortly after the time when an application is first launched, how much
+attention is paid to a maintenance plan? Probably not much. The business
+is likely to be more focused on how well the application will achieve
+its objectives. This is reasonable.
+
+However, at some point, as it hopefully becomes clear that the
+application is achieving sufficient success to remain deployed for the
+foreseeable future, attention must be paid to updating dependencies.
+Tools such as [Dependabot](https://dependabot.com/) smooth the way.
+
+Failure to embark upon a program of regularly implementing updates will
+lead to a poor set of outcomes. As far as ease of maintenance is
+concerned, allowing versions of dependent software to get out of date is
+likely to result in much time lost in frustrating developer experience,
+whether it is due to difficulty in installing unsupported versions or a
+mismatch in online documentation and old versions that the application
+still depends upon.
+
+The lack of security patches, which are regularly included on new
+versions of software, can also result in risks to business operations.
+
+Relating these comments back to the tweet reference that started this
+post, a healthy set of automated tests will make it much easier to
+confidently apply updates of dependent software. A lack of automated
+tests and CI will likely lead to dependence on unsupported software. As
+a related aside, it is interesting to read the first two paragraphs of
+[Upgrading Ruby on
+Rails](https://guides.rubyonrails.org/upgrading_ruby_on_rails.html) on
+the *Rails Guides* site:
+
+> “Before attempting to upgrade an existing application, you should be
+> sure you have a good reason to upgrade. You need to balance several
+> factors: the need for new features, the increasing difficulty of
+> finding support for old code, and your available time and skills, to
+> name a few.
+
+> The best way to be sure that your application still works after
+> upgrading is to have good test coverage before you start the process.
+> If you don’t have automated tests that exercise the bulk of your
+> application, you’ll need to spend time manually exercising all the
+> parts that have changed. In the case of a Rails upgrade, that will
+> mean every single piece of functionality in the application. Do
+> yourself a favor and make sure your test coverage is good before you
+> start an upgrade.”
+
+## Parting thoughts
+
+A successful application launch is something to be celebrated. An
+application successfully operating after a significant period of time is
+even better. However, careful planning and management are necessary to
+ensure that applications truly stand the test of time.
+
+Automated tests and continuous integration play a crucial role in
+allowing development teams to confidently maintain applications that
+will continue to adapt to changing business requirements.

@@ -1,0 +1,172 @@
+---
+layout: post
+title: On Communities in Crisis Mode
+date: 2020-04-02
+permalink: /blog/archives/2020-04-02-on-communities-in-crisis-mode
+---
+
+Like many in Australia I’ve been at home for more than a week now.
+
+For my work, that’s not so unusual. It has been well over a decade since
+I started working from home most of the time. So I haven’t had to adapt
+in the same way that many of my colleagues in the software development
+industry have.
+
+## The COVID-19 threat
+
+![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d7a5d9305858e35c49c8399c3de52b0d19552d64/martin-sanchez-Tzoe6VCvQYg-unsplash.jpg)
+
+*Photo by [Martin Sanchez](https://unsplash.com/@martinsanchez) on
+Unsplash*
+
+Obviously there is a broader community focus now that the spectre of
+COVID-19 looms ever larger.
+
+For the last couple of weeks, as the risk of the coronavirus spreading
+in Australia has become more serious, I have been doing my best to stay
+at home. I’ve made no trips to my golf club in the last fortnight and
+those of you who know me well will know what a sacrifice that is!
+
+In normal times I also look forward to Sunday morning trips to the local
+farmers’ markets. The Sunday morning before last turned out to be our
+last trip for the time being. We arrived relatively early to find the
+biggest crowd we’ve ever witnessed at these markets. Whilst they are
+classified as an essential source of food, we felt it was impossible to
+practice safe physical distancing. My wife and I decided it was,
+regrettably, our last visit for now.
+
+### Before
+
+As I mentioned at the outset of this post, I’ve been used to working
+remotely for many years. In doing so I have gradually accumulated
+experience with using a variety of tools to become more effective as a
+remote worker.
+
+The most relevant class of tools to this post is those that enable
+meetings via video. I’ll come back to those in a moment.
+
+I think it’s also important to acknowledge that, until recently, my
+remote work was broken up by face to face social activity that I took
+for granted.
+
+Whether it was sharing a round of golf with mates and catching up with
+others in the clubhouse afterwards, chatting with stall holders at the
+farmers’ markets or even enjoying my trips to the barber, there has been
+the simple pleasure of conversation in person to sustain me.
+
+And to give me a break from the isolation of working alone in my home
+office.
+
+### New considerations
+
+Now that’s gone. At least in my case I have my wife, who has recently
+started working from home full time, in the same house. I know others
+who live alone and don’t usually work from home are finding the
+adjustment especially challenging.
+
+One thing I’m acutely aware of is the need to look after my mental
+health. My [personal
+experience](/blog/archives/2014-10-10-stress-and-software-development)
+has taught me that I need to be careful not to let too much stress build
+up.
+
+In my experience, antidotes to stress include getting outdoors, mixing
+with other people, playing sport and having a good laugh with others.
+There’s nothing quite like impulsively laughing or seeing the joyful
+laughter on someone else’s face as your joke lands.
+
+COVID-19 obviously brings new challenges to staying sane.
+
+### Communities staying connected
+
+So, how can communities help in these times of being distanced from each
+other?
+
+Sometimes by necessity a community group that would normally meet face
+to face now has to meet via video. For example, only last night my golf
+club’s board of directors met via Zoom. To those in the tech community
+reading this for whom the mention of Zoom will raise a red flag on
+security grounds, please suspend your cries of protest! As we know, many
+people are adapting as they go, attempting to respond to this crisis as
+best they can as it unfolds. For some in our board, this was a first
+experience of a video meeting. Once we gathered all the participants and
+the meeting got into full swing, I sensed a reassuring feeling. A strong
+impression for me was the renewed connection between us, simply by
+virtue of being able to see each other as the discussion ensued.
+
+### Professional Communities
+
+There are other contexts I would like to relate whilst writing about the
+theme of community in a crisis.
+
+![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f1ccac0a053460f9d9d5e0f8a1ceb49424b688a1/hoa-fireside.jpg)
+
+A professional community that I’ve been attracted to and involved in
+since 2018 is the Heart of Agile. Whilst there have been physical
+meetups all over the world, I was pleased to have the opportunity the
+other day to participate in the first [fireside
+chat](https://heartofagile.com/heart-of-agile-fireside-chat-with-alistair-cockburn-and-hoa-colleagues-australia-edition/)
+in an Australian time zone. I found the experience of being connected to
+more than 50 like-minded professionals via video to be quite uplifting.
+
+Indeed, tomorrow morning it would seem that this community is
+facilitating a “drop-in” video hook-up. Maybe I’ll remember to drop in,
+we’ll see. Even if I don’t, I love the fact that someone has taken the
+initiative to make this opportunity available.
+
+![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1db255aae26b8247e4575dd6aebd1c3f88a68342/ruby-au.jpg)
+
+Since 2006 I have been privileged to be part of the Australian Ruby
+Community. I’ve enjoyed so many wonderful face to face experiences as
+part of this community, whether they have been meetups, Rails Camps,
+conferences or just catching up with friends that I have made as part of
+this community.
+
+In recent days, I’ve drawn sustenance from friends who have taken the
+initiative to invite others to catch up over video. About a week ago I
+had, not to put too fine a point on it, a pretty shitty day. My Ruby
+friends Elle and Lachlan kindly invited me to drop into their place to
+chat online over video. Such kindness. The weekend before that my good
+friend Matt had facilitated a video chat amongst his professional
+friends. To hear the different ways that the economic fallout of the
+coronavirus had affected folks was humbling. And, last weekend, Pete put
+out a call over Twitter that he was interested in catching up. A video
+chat ensued, which allowed several of us in the tight-knit Australian
+Ruby community to share our challenges with respect to dealing with
+living in isolation.
+
+To all these dear friends in the Ruby community, I express my heartfelt
+thanks.
+
+### An Approximation to Face to Face
+
+Within and beyond the Ruby community I know that many meetups are
+adapting to hold their gatherings online. I had thought of attending the
+Sydney Elixir meetup last night but in the end was unable to.
+
+Ultimately, we all crave connection to other humans, no matter how
+introverted we are. And, let’s face it, many programmers are.
+
+During the coming weeks and months, the best we will be able to do in
+almost all circumstances, is to come together as communities with the
+aid of video meeting tools. Before you get too down about that, consider
+how it must have been 100 years ago as communities did their best to
+deal with the Spanish flu.
+
+At least in 2020 we have tools like Zoom, Google Hangouts and Whereby.
+
+## Staying positive
+
+In a way, the online connectivity of life in April 2020 is a
+double-edged sword.
+
+On the one hand, technology brings the harsh realities of the horrific
+effects of COVID-19 into our lives in a way that is difficult to ignore.
+From an Australian perspective, what we see, hear and read of life in
+Italy, Spain, the UK and USA is sobering and disquieting, to say the
+least.
+
+On the other, if we use the technology mindfully, staying connected
+within our communities via video tools can help. Whilst not perfect, it
+can provide us with at least a good approximation of what we, as humans,
+crave.

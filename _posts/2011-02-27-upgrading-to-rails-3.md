@@ -1,0 +1,117 @@
+---
+layout: post
+title: Upgrading to Rails 3
+date: 2011-02-27
+permalink: /blog/archives/2011-02-27-upgrading-to-rails-3
+---
+
+## Introduction
+
+It was long overdue.
+
+Rails 3.0.5 is out and I’ve finally bitten the bullet and upgraded this
+site to Rails 3 and Ruby 1.9.2. The site had its genesis back in
+mid-2007 as I was preparing to start my own business. Since 2008 the
+codebase hasn’t received much love. Indeed, I have only published
+articles here in dribs and drabs over the last couple of years.
+
+So, as I embarked on this upgrade, I was aware that it also represented
+an opportunity to clean up some of my code as well as update third party
+libraries.
+
+What follows is a story of how the upgrade unfolded including some
+decisions I made along the way and some lessons I learned.
+
+## Ruby 1.9.2
+
+My initial intention was to just upgrade the app to use Ruby 1.9.2 and
+attack the Rails 3 upgrade later. However, as I soon found out, getting
+the app to work on Ruby 1.9 wasn’t as easy as I had anticipated. Sure,
+using RVM it was easy to change to using Ruby 1.9.2 in development. I
+also chose to move to Bundler even though my intention was to stay at
+Rails 2.3 for now.
+
+However, I quickly discovered that not all the plugins I was using had
+been upgraded to run on Ruby 1.9.
+
+## Syntax Highlighting Adventures
+
+Back in 2008 when I [implemented syntax code
+highlighting](/blog/archives/2008-10-17-code-syntax-highlighting) I
+chose to use the tm_syntax_highlighting plugin, which is based on
+[Ultraviolet](http://ultraviolet.rubyforge.org/). Unfortunately, the
+original tm_syntax_highlighting plugin is not supported on Ruby 1.9.
+There is a [gem derived from
+it](https://github.com/dasil003/tm_syntax_highlighting) that claims to
+support Ruby 1.9 but I failed to get this to work.
+
+I had a look at the [suggestions from Ryan
+Bates](http://asciicasts.com/episodes/207-syntax-highlighting) and,
+because I had been using a solution based on Ultraviolet, I considered
+using [Harsh](https://github.com/michaeledgar/harsh) but soon found that
+it was not supported on Ruby 1.9.
+
+At this point I decided to go the whole hog and upgrade to Rails 3. As
+for supporting syntax highlighting, I ended up switching to use
+[CodeRay](http://coderay.rubychan.de/).
+
+## Rails 3 Here I Come
+
+First point of call for anybody embarking on a Rails 3 upgrade has to be
+Jeremy McAnally’s [Rails 3 Upgrade
+Handbook](http://www.railsupgradehandbook.com/). This invaluable
+resource not only guides you through using the official “rails upgrade”
+tool but explains how to make the most of the improvements in Rails 3.
+
+So I methodically worked my way through the upgrade to the point where I
+was able to start and use the Rails console. This was a real milestone
+but I still had much to do before I could consider my upgrade complete.
+
+## Time to jettison old plugins
+
+When I attempted to get the app running via a browser it quickly became
+evident that it was high time I jettisoned some ancient plugins.
+
+Chief of these was the acts_as_authenticated plugin. Yes, I did say
+ancient. I’m aware that
+[Devise](https://github.com/plataformatec/devise) is a favoured
+authentication solution for Rails 3. However, having had success in
+other projects with
+[Authlogic](https://github.com/binarylogic/authlogic), I chose to use it
+in the interests of expediency.
+
+Another old plugin that needed replacing was
+acts_as_taggable_on_steroids. The
+[acts_as_taggable_on](https://github.com/mbleigh/acts-as-taggable-on)
+gem proved to be an effective replacement for this with minimal changes
+required.
+
+The final old plugin to be jettisoned was akismetor, which I replaced
+with the [Rakismet](https://github.com/joshfrench/rakismet) gem.
+
+## Some comments about testing
+
+I haven’t said anything about automated tests to this point. That is
+quite simply because I haven’t touched them. I know I should but, since
+this is a relatively small app that really only affects me, I decided to
+bypass automated testing in favour of completing the upgrade quickly.
+Some may scold me for this decision but I couldn’t justify the effort to
+myself. I’ll come back and get the automated tests working again later.
+
+**Note**: If this was a larger app for a customer I would be far less
+inclined to bypass the task of ensuring that the automated tests work
+before considering the upgrade complete.
+
+## Reflections
+
+I’m glad I’ve taken the time to upgrade this app to Rails 3 and Ruby
+1.9.2. It has given me the chance to:
+
+-   replace old plugins with more recent gems;
+-   take advantage of Bundler;
+-   practice upgrading to Rails 3;
+-   position the app for further code improvements courtesy of Rails 3
+    and Ruby 1.9.
+
+And, of course, now I can say that I have upgraded an old Rails app to
+Rails 3!

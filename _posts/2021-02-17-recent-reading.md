@@ -1,0 +1,140 @@
+---
+layout: post
+title: Recent Reading
+date: 2021-02-17
+permalink: /blog/archives/2021-02-17-recent-reading
+---
+
+It has been a while since I wrote a post on this site. I have a few
+ideas for topics to write about in the future but I shall let them
+percolate for the time being.
+
+Meanwhile, I thought I would write a brief post to share what I have
+been reading lately that relates to my work.
+
+![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBVQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--76ce04d009fd0d34356331b59e54e64e77b7be7c/susan-yin-2JIvboGLeho-unsplash.jpg)
+
+<span>Photo by
+<a href="https://unsplash.com/@syinq?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan
+Yin</a> on
+<a href="https://unsplash.com/s/photos/books?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+## General
+
+### Retrospective Antipatterns
+
+*By Aino Vonge Corry*
+
+Aino is a long-time facilitator of retrospectives. Whilst she hails from
+Denmark, I recall hearing her speak at a YOW! conference in Sydney
+several years ago.
+
+As someone who has facilitated and participated in retrospectives for
+many years, I’m keen to learn how to make them more effective. So I’m
+grateful to Aino for sharing the knowledge she has gained from her
+experience.
+
+Somewhat ironically, *Retrospective Antipatterns* is arranged in a
+pattern. Aino presents 24 antipatterns, divided into three parts:
+structural, planning and people. Each part contains eight antipatterns.
+Is it a coincidence that there is a picture of an octopus on the cover
+of the book?
+
+Anyway, I’ve read the first three chapters and am keen to work my way
+through the remainder of the book. Unfortunately I haven’t had the
+opportunity to be involved in any retrospectives for a while but
+hopefully that will change soon.
+
+### The Culture Code
+
+*By Daniel Coyle*
+
+Whilst I haven’t read Daniel Coyle’s *The Talent Code*, I recall hearing
+it recommended in a conference talk a few years ago. So, when I was
+curious to find a good book about what makes for a successful
+organisation, I was attracted to reading what Daniel had to say about
+culture.
+
+Throughout my career as a software developer, which now spans 37 years,
+I have firmly been of the opinion that people are more challenging than
+technology. Moreover, I have thrived when I’ve worked within a
+well-functioning team. However, that has not always been the case. I can
+recall some stages in my career where, to me, there were significant
+problems with the organisation’s culture.
+
+Daniel lays out advice about how a group can develop three crucial
+skills: building safety, sharing vulnerability and establishing purpose.
+I’ve nearly finished reading the chapters in the first section and am
+impressed by what I have read so far. Once I’ve finished the book, I
+anticipate delving back into it to refresh my memory on Daniel’s advice
+about building a healthy culture. It’s a vital topic for any workplace.
+
+### Succeeding with OKRs in Agile
+
+*By Allan Kelly*
+
+We’ve been attempting to use Objectives and Key Results at work
+recently. I must admit I have been somewhat skeptical about how
+effective they have been. However, a few days ago I became aware of this
+book, which has been recently published in electronic form.
+
+Having read Allan’s books *Project Myopia* and *Continuous Digital*, I
+was interested to learn that he had been moved to write a book about
+OKRs. I’ve only just started reading it but, knowing that it is based on
+Allan’s experience of *how* to create and deliver OKRs, I’m interested
+to read the rest of the book. Maybe then I’ll be more convinced of how
+helpful OKRs can be.
+
+## Technical
+
+### Elixir in Action, Second Edition
+
+*By Sa&scaron;a Juri&cacute;*
+
+I’ve been maintaining and enhancing an Elixir application at work for
+the last 18 months or so.
+
+As I have built my knowledge about the application I have also found
+myself needing to delve into understanding the fundamentals of Elixir.
+This has been over and above understanding how Elixir implements
+functional programming. When needing to become more acquainted with the
+intricacies of Elixir’s GenServers, supervisors and fault-tolerance, for
+example, *Elixir in Action* has been an invaluable resource.
+
+### Adopting Elixir
+
+*By Ben Marx, Jos&eacute; Valim and Bruce Tate*
+
+Whilst I haven’t got far into this book, I am sure that it is contains
+much good advice. The authors of *Adopting Elixir*, published in 2018,
+wrote the book to share their experiences and provide details “that are
+typically difficult to find for an emerging language”.
+
+The book is divided into three parts, following adoption from concept to
+development and, finally, to production. I’ve been dipping into
+different chapters in the book, mostly concerned with production.
+Despite the fact that it’s three years since this book was written, I’m
+finding it valuable. For example, given that we are in the process of
+shifting the deployment platform for our application from Heroku to AWS,
+the book provides helpful explanations of the details of how a release
+is built, how the application is configured, and how it can be deployed
+using blue-green deployments.
+
+### Craft GraphQL APIs in Elixir with Absinthe
+
+*By Bruce Williams and Ben Wilson*
+
+Not so long ago at work I needed to develop a Proof of Concept API in
+our Elixir application. Given that we have used GraphQL elsewhere in our
+platform, I chose to develop an Elixir GraphQL API. This book proved to
+be extremely helpful.
+
+Whilst the book goes into more detail than I needed, I appreciated how
+it guided me through the process of creating a schema module and a
+GraphQL query so that I could then demonstrate the API via GraphiQL.
+
+## In Closing
+
+So there you have it. I’ve always valued reading books as a way of
+learning and this post gives you, dear reader, an idea of what I’ve been
+reading lately.

@@ -1,0 +1,46 @@
+---
+layout: post
+title: OSDC 2008 Earlybird registration closing this Friday
+date: 2008-10-28
+permalink: /blog/archives/2008-10-28-osdc-2008-earlybird-registration-closing-this-friday
+---
+In exactly five weeks this year's Open Source Developers' Conference starts. As one of the organising committee it would be remiss of me not to alert you to the fact that if you "register":http://www.osdc.com.au/2008/registration by this Friday you can take advantage of earlybird pricing.
+
+h3. The Facts
+
+31st October: Earlybird registration closing
+
+2nd December: Google Hackathon
+3rd - 5th December: Conference Program
+3rd December: Conference Dinner
+
+h3. Where
+
+"SMC Conference and Function Centre":http://www.osdc.com.au/2008/location
+66 Goulburn St
+Sydney NSW 2000
+
+h3. The Main Conference
+
+The Open Source Developers' Conference 2008 is a conference run by open source developers, for developers and business people. This year we have talks covering Apache, Java, Ruby, Perl, PHP, Python, Testing and much more. Our keynote speakers this year are:
+
+* Larry Wall, the creator of Perl
+* Chris DiBona, Open Source Programs Manager for Google
+* Anthony Baxter, Python Evangelist
+* Pia Waugh, Consultant, Waugh Partners
+* Andrew Tridgell, Founder, Samba Team
+
+Speakers on Ruby topics include:
+
+* Michael Koukoullis: "Story-based Web Development"
+* Dr Nic Williams: "How to package your Ruby code for distribution and sharing"
+
+Check out "the program":http://www.osdc.com.au/2008/papers for more information.
+
+h3. Google Hackathon
+
+The day before the main conference, there will be an optional event. The Google Hackathon will consist of 3 coding workshops during the day with attendance limited to a maximum of 100 people/workshop. To register for any of the workshops, you must have registered for the 3 day OSDC 2008 main conference.
+
+h3. Our Sponsors
+
+Naturally the organising committee is most grateful to our sponsors: Google, Corporate Express, Sun Microsystems, Strategic Data, Obsidian Consulting Group, IBM, Zacware/Freeway, ACS, Net Logistics, GROX, UTBox, Internode and Linux Magazine.

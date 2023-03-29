@@ -1,0 +1,71 @@
+---
+layout: post
+title: Achieving Flow in a Development Team
+date: 2017-06-01
+permalink: /blog/archives/2017-06-01-achieving-flow-in-a-development-team
+---
+One day last June I was moved to "share an opinion on Twitter":https://twitter.com/keithpitty/status/745781077126504448.
+
+!https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--66b662eae10be210b87a1554c2669765c058d98c/team-flow.png!
+
+And as the following exchange shows, at least one reader, my former colleague SengMing Tan, expressed a desire to know more.
+
+!https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f49c34a520c57ab7c538098d629f186ae947193c/team-flow-sengming.png!
+
+As I foreshadowed, it has taken me a while to get around to elaborating.
+
+However, the time has come. After nearly a year has elapsed I am fulfilling my promise. 
+
+Here is a description of how the team I've been working in at "The Conversation":https://theconversation.com uses Kanban, Trello, GitHub, Buildkite and Babushka to develop, review and ship software in a way that encourages flow.
+
+h2. Tools and Techniques
+
+h3. Kanban
+
+Whilst there are several tools that we use which combine to help our team feel that we are constantly making progress towards shipping software, it is the "Kanban":https://en.wikipedia.org/wiki/Kanban system which underpins them.
+
+As I understand it, the team started out with a low-fi approach by using a physical card Kanban wall. But by the time I joined, they had moved that wall to "Trello":https://trello.com/. Which was just as well, because I was the first remote member of the development team.
+
+Nevertheless, I think it is the Kanban style of only allowing a specified maximum number of cards in each "swim lane", that is crucial to the overall feeling of progress that our team has.
+
+h3. Trello
+
+As anyone who has used Trello knows, the general style is to represent progress by aiming to move cards from left to right across the columns. Whilst there are other columns on our development board, the following image depicts those that are essential to the way Trello supports our Kanban style of development.
+
+I've blurred out the details of the cards but the key things to notice are the column headings. Notice that we have upper limits set for how many cards should be _Queued_, _In Progress_ or under _Review_. This helps us each individually focus on completing a piece of work. As a team, it draws attention to ensuring that work is reviewed in a timely manner. If more than six cards are in the _Review_ column, we consider that to be a broken state. It is a prompt to the team to give more focus to reviewing pull requests until we can merge enough of them and move the corresponding Trello cards to the _Ready_ column.
+
+!https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--505380ff01d77121f1a175a39ae2db0aba85e1fe/trello-kanban.jpg!
+
+There are other columns on our development board such as _Confirmed_ to the left and _Complete_ to the right of those shown in the screenshot. And we have other boards. However, in the context of how we use Trello to help the team achieve flow, the four columns shown demonstrate what is at the heart of how we use Trello.
+
+h3. GitHub
+
+One of the things I like about the paid version of Trello is the various "Power-Ups":https://trello.com/power-ups. I find the "GitHub Power-Up":http://info.trello.com/power-ups/github particularly useful. As "I have written elsewhere":/blog/archives/2015-09-19-effective-collaboration-using-github-prs, when I'm working towards a solution I prefer to share code via a pull request as early as possible. Fortunately our team has a strong culture of providing respectful feedback via pull requests.
+
+There are times when I feel the need to gently prod my teammates to provide feedback on my pull requests. However, once the conversation within the context of a GitHub PR starts, it is usually very helpful. I like the way the tone of our comments tends to be questioning and curious rather than judgemental.
+
+Once a Trello card, with a linked PR, is designated as available for review, it is important for the team to give it timely attention. Occasionally attention is diverted elsewhere. For this reason our team programmed our Slackbot to inform us if a card has been in the Review column for too long. To me this is a helpful prompt to keep contributing to the effort that will result in shipping software. Speaking of Slack, its integration with GitHub is an obvious boon. Being able to see via our main *#dev* Slack channel when a PR is created or merged certainly helps teamwork.
+
+Being able to easily trace code changes in a PR that result from a Trello card is wonderful for maintaining flow. Did I mention how much I love the "Trello GitHub Power-Up":http://info.trello.com/power-ups/github?
+
+h3. Buildkite
+
+The ways in which "Buildkite":https://buildkite.com can assist teams achieve flow is worthy of a post in itself. For the purposes of this discussion, I'll confine myself to the way Buildkite is integrated into our team workflow.
+
+We use Buildkite to automate our continuous integration builds. Unsurprisingly it is integrated with GitHub so that it's easy to see whether or not the build has passed for the latest commit on a PR. Then there is the Slack integration, which I find useful as another prompt about the success or failure of builds. There are times when the first place I'll notice a build failure is via our *#buildkite* Slack channel.
+
+Obviously part of achieving flow is ensuring that the build for a PR is successful before that PR is merged. And, of course, the build for the master branch must be :green_heart: before we can deploy.
+
+h3. Babushka
+
+Whilst we have not yet reached the point where we continuously deploy our software, we do typically deploy applications several times each day. The tool that helps us :ship: software is "Babushka":https://babushka.me/, courtesy of an alumnus of The Conversation, "Ben Hoskings":https://github.com/benhoskings.
+
+Babushka may not be as well known as other tools which support deployment but it has served our team well so far. Once a master build is :green_heart: for an application and we are ready to :shipit:, it is a simple matter of entering *babushka 'SHIP IT'* at the command line and the defined dependencies will enable babushka to deploy our software.
+
+h2. Summing Up
+
+It's all about flow. As emphasised by psychologist "Mihály Csíkszentmihályi":https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi, in a personal context "flow":https://en.wikipedia.org/wiki/Flow_(psychology) is _"the mental state of operation in which a person performing an activity is fully immersed in a feeling of energized focus, full involvement, and enjoyment in the process of the activity."_
+
+Translating this concept into a software team, we can see that it is important to remove as many barriers as we can to the team being fully immersed in shipping quality software. The Kanban approach supported by various integrated tools can certainly help in this regard.
+
+And, in my experience, it can be fun too!

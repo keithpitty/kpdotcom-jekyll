@@ -1,0 +1,71 @@
+---
+layout: post
+title: Reflecting on RubyConf AU 2020
+date: 2020-03-12
+permalink: /blog/archives/2020-03-12-reflecting-on-rubyconf-au-2020
+---
+Life can get busy can't it?
+
+Among a myriad of things that have been on my list of things to do is write another blog post. Somewhat embarrassingly, as I write this, my most recent post was written over a year ago, when I reflected on the experience of presenting at RubyConf AU 2019.
+
+Having recently attended RubyConf AU 2020, it's only fair that I share my reflections about this year's conference. If nothing else, it will provide some recent content on this site!
+
+I think the following tweet from Josh Price echoes my feelings about RubyConf AU very well.
+
+!https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--14e248a4e93d14ecd59e8bedeac3dce3affdf627/rubyconf-au-2020.jpg!
+
+Whilst I know that Josh has moved on to focus on other technologies such as Elixir I agree with him that there's something very special about the Ruby community. Here in Australia it is still going strong after emerging in about 2006. Eight conferences since 2013 and 26 Rails Camps since 2007 speak for the continued desire for the community to get together.
+
+h2. RubyConf AU 2020 Talks
+
+So, what did I find especially poignant about this, the eighth edition of RubyConf AU? Whilst "all the talks":https://rubyconf.org.au/2020/speakers were worth paying attention to, let me select a few highlights.
+
+h3. Lemurs
+
+I did use the word poignant purposefully just now with a reason. "Brandon Weaver":https://twitter.com/keystonelemur gave a story telling performance, "Tales from the Ruby Grimoire":https://www.youtube.com/watch?v=xRj5DWvdx6k, that certainly provoked echoes of "Why's Poignant Guide to Ruby":https://poignant.guide/, an online tome that has found a special place in the Ruby community's folklore.
+
+Brandon most definitely had me captivated as he facilitated the journey of several lemurs on their way to discovering more intricacies of the Ruby language. I'm sure his talk affected different people in different ways. For me, whilst I'm sure there was valuable content about programming in Ruby, I was blown away by Brandon's artistry. The drawings in his slides were astounding. Then there was the storytelling itself!
+
+h3. Escaping
+
+Talks about good code quality and how to pragmatically achieve it always hold my attention. Ernesto Tagwerker's "Escaping The Tar Pit":https://www.youtube.com/watch?v=ORb2UQ0_8zg was no exception.
+
+"Ernesto":https://twitter.com/etagwerker focussed on a topic dear to my heart: maintainability of software. To those who know me and know how much time I've spent maintaining codebases throughout my career, this will come as no surprise. Ernesto went beyond talking about code coverage using tools such as simplecov. When Ernesto honed in on code quality, I was interested to learn about "RubyCritic":https://github.com/whitesmith/rubycritic, which I hadn't previously been aware of. RubyCritic uses other tools such as flog and flay to highlight churn and complexity.
+
+Ernesto didn't, however, stop at code coverage and code quality. He went on to highlight a combination of the two, what he refers to as the "stink score". He then referred to a tool, appropriately called "Skunk":https://github.com/fastruby/skunk, which measures this score.
+
+Without giving away any more of the details of Ernesto's talk, I thoroughly recommend it. That's unless you're happy to let your codebase descend into the tar pit, never to be recovered!
+
+h3. Documentation
+
+Helpful documentation is something else that dear to my heart. I was delighted to see the way that "Carmen Chung":https://twitter.com/carmenhchung brought attention to this important topic with the title of her talk, "How To Write Tech Documentation That Will Save Your Career":https://www.youtube.com/watch?v=ocqjOFrrios.
+
+Carmen took us through a journey of how incomplete communication resulted in a disastrous outcome, which could have been avoided by thoughtful documentation.
+
+I think of my own current work environment and the multitude of opportunities for developers to thoughtfully leave clues for their colleagues about the reasons for their actions. It does require self-discipline and consideration for others. Carmen offered several useful tips for how to leave a trail of helpful documentation, using various tools to help others in the team.
+
+However, as Carmen illustrated so well, there is also a considerable element of protecting yourself as well.
+
+h3. Experience
+
+To close out the conference, I thought the organisers did very well to choose Xavier Shay's talk on "My Experience With Experience":https://www.youtube.com/watch?v=0na_1A_-Ebo.
+
+I loved one of Xavier's opening statements, which was "learning from experience is hard." To me that is such a thoughtful and honest thing to say. It begs the question that Xavier went on to explore: "how can we better learn from experience?"
+
+Xavier initially introduced feedback loops and their role in learning. However, he quickly illustrated that this learning pattern does not apply to all situations. For example, it doesn't help with improving one's organisation of code.
+
+When Xavier went on to talk about wicked learning environments, his talk grabbed my attention, which was quite a feat at this late stage of the conference. He referred to a "paper":https://pdfs.semanticscholar.org/5c5d/33b858eaf38f6a14b3f042202f1f44e04326.pdf by Hogarth et al entitled "The Two Settings of Kind and Wicked Learning Environments".
+
+Using the challenge of hiring staff as an example of a wicked learning environment, Xavier illustrated the inherent problem.
+
+I won't spoil the rest of Xavier's talk. It certainly contained more nuggets of reflection and reference to others' research. Suffice to say that I thoroughly recommend listening carefully to it.
+
+This was a very thoughtful talk to end the conference.
+
+h2. Thanks to the organisers
+
+As I said earlier, this was the eighth Australian Ruby Conference. As I know very well, they don't happen "without much effort":https://keithpitty.com/blog/archives/2013-02-15-anticipating-rubyconf-austalia-2013.
+
+I would like to pay my thanks to this year's organisers, Rache, Ben and Caitlin. Undoubtedly, the support from Ruby Australia's sponsors helps ensure that these conferences are financially viable. Equally, without the willingness of people to volunteer to help organise the conferences, they wouldn't happen.
+
+So, to Rache, Ben and Caitlin, once again, I express my heartfelt thanks for organising RubyConf AU 2020.

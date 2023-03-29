@@ -1,0 +1,31 @@
+---
+layout: post
+title: Being productive without coding
+date: 2013-04-05
+permalink: /blog/archives/2013-04-05-being-productive-without-coding
+---
+
+I feel like I’ve been quite productive over the last day or so even if I
+haven’t written any code.
+
+The requirements I had for a new feature were a little vague so I spent
+some time:
+
+-   investigating third-party open source libraries (in this case Ruby
+    gems) that may have helped
+-   exploring the code base of our own application
+-   talking with stake-holders in order to clarify the scope and steer
+    the first iteration of this feature towards gaining a small set of
+    big wins for the users
+-   sketching a possible solution in brief notes rather than code
+-   reviewing my intended approach with a colleague
+
+Now I’ve reached the point where I think it’s a good time to start
+coding.
+
+Different people have different approaches to solving software problems.
+I’m quite systematic and methodical by nature.
+
+In any case, I wanted to share this experience because I think that
+sometimes it pays to spend time thinking, exploring and talking before
+diving into coding.

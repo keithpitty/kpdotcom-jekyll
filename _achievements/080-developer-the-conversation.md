@@ -1,0 +1,51 @@
+---
+layout: none
+heading: Developer, The Conversation (2015 - 2017)
+---
+
+In June 2015 I joined the [technology
+team](http://theconversation.com/au/team#technology) at [The
+Conversation](http://theconversation.edu.au) on a contract basis to
+contribute to the development of the web applications that support their
+sites in [Australia](http://theconversation.com/au),
+[Africa](http://theconversation.com/africa),
+[Canada](http://theconversaion.com/ca),
+[France](http://theconversation.com/fr),
+[Indonesia](http://theconversation.com/id), the [United
+Kingdom](http://theconversation.com/africa) and the [United
+States](http://theconversation.com/us) as well as a [Global
+Perspectives](http://theconversation.com/global) edition.
+
+My work included:
+
+-   facilitating process improvements to the development team’s workflow
+-   facilitating effective communication among distributed members of
+    the development team
+-   mentoring colleagues and reviewing code
+-   contributing to the customization of The Conversation’s Apple News
+    channel
+-   enabling fact check articles to utilize Google’s ClaimReview schema
+-   contributing to various technical upgrades
+-   contributing to the launch of The Conversation in Indonesia
+-   facilitating more flexible pitches to editors from prospective
+    authors
+-   reviving and curating the [*Building the
+    Conversation*](https://theconversation.com/columns/building-the-conversation-534)
+    development blog
+-   contributing to the development of a custom Analytics Rails
+    application to provide enhanced metrics information to institutional
+    users
+-   maintenance and enhancement of the Data Warehouse, a Sinatra
+    application which is an integral part of the suite of applications
+    which form The Conversation’s web platform
+-   improvement of the reliability of the test suite of the main
+    application
+-   development of a set of rake tasks to help manage translations in
+    the codebase, subsequently extracted to the [i18n-hygiene
+    gem](https://github.com/conversation/i18n-hygiene)
+-   contributing to the internationalisation and localisation of the
+    main Rails application to support the launch of The Conversation
+    France
+-   collaborating with the Community Manager to facilitate improved
+    management of comments
+-   fixing various problems reported by customers and editorial staff

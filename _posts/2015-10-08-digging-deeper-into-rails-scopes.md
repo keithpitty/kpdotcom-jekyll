@@ -1,0 +1,83 @@
+---
+layout: post
+title: Digging deeper into Rails scopes
+date: 2015-10-08
+permalink: /blog/archives/2015-10-08-digging-deeper-into-rails-scopes
+---
+
+## Background
+
+Recently I wrote a post about [Rails scopes and
+lambdas](http://keithpitty.com/blog/archives/2015-10-06-rails-scopes-and-lambdas)
+in an attempt to clarify why it is so common to see the use of lambdas
+with Rails scopes. I now realise that I could have gone a bit further in
+my explanation.
+
+A question that is sometimes asked is:
+
+> Why are lambdas used with Rails scopes? Why not procs or blocks?
+
+To answer that question it is useful to first look at the implementation
+of the Rails <code>scope</code> method in
+<code>ActiveRecord::Scoping::Named::ClassMethods</code>.
+
+## Implementation Details
+
+The implementation is as follows:  
+<code lang='ruby'>  
+def scope(name, body, &block)  
+unless body.respond_to?(:call)  
+raise ArgumentError, ‘The scope body needs to be callable.’  
+end
+
+if dangerous_class_method?(name)  
+raise ArgumentError, “You tried to define a scope named \\”#{name}\\ ”
+\\  
+“on the model \\”#{self.name}\\“, but Active Record already defined ”
+\\  
+“a class method with the same name.”  
+end
+
+extension = Module.new(&block) if block
+
+singleton_class.send(:define_method, name) do \|\*args\|  
+scope = all.scoping { body.call(\*args) }  
+scope = scope.extending(extension) if extension
+
+scope \|\| all  
+end  
+end  
+</code>
+
+Now let’s consider this implementation in conjunction with the following
+scope:  
+<code lang='ruby'>  
+class Article \< ActiveRecord::Base  
+scope :created_before, -\>(time) { where(“created_at \< ?”, time) }  
+end  
+</code>
+
+In this example, <code>:created_before</code> is interpreted as
+<code>name</code> and <code>-\>(time) { where(“created_at \< ?”, time)
+}</code> as <code>body</code>.
+
+### Block, Proc or Lambda?
+
+Notice that <code>body</code> must be callable. So that rules out a
+block, which is simply a syntactic structure. However, it does still
+allow <code>body</code> to be a lambda or a proc.
+
+Whilst it is technically possible for a proc to be used in conjunction
+with a Rails scope, a lambda is more useful because of the constraint
+that it must, unlike a proc, have a specific **arity**. For example, in
+the example above, <code>Article.created_before</code> must be called
+with one argument.
+
+## Summing up
+
+Hopefully, that explains why lambdas are used with Rails scopes.
+
+Of course, you’ll notice that the implementation of the
+<code>scope</code> method uses metaprogramming via
+<code>:define_method</code> to create a class method that could have
+been programmed directly.

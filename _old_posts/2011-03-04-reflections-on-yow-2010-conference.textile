@@ -1,0 +1,70 @@
+---
+layout: post
+title: Reflections on YOW 2010 Conference
+date: 2011-03-04
+permalink: /blog/archives/2011-03-04-reflections-on-yow-2010-conference
+---
+h2. Introduction
+
+p. Perhaps I needed time to reflect on such a wonderful conference.
+
+p. Ever since the "YOW! Developer Conference":http://www.yowconference.com.au/melbourne/events_tracks/index_tracks.html in Melbourne last December, I've been meaning to share some of my impressions. It may be three months down the track but I'm finally getting around to it!
+
+h2. Five Favourite Talks
+
+The conference deserved praise for many reasons but I'll narrow it down to some brief reflections on five talks that impressed me for different reasons.
+
+h3. Neal Ford
+
+p. A small percentage of Rails developers have the opportunity to work in teams developing large, enterprise-scale apps. A not insignificant number of aspersions have been levelled at Rails, claiming that it can't scale. So it was refreshing to hear Neal Ford talk about "Rails in the Large":http://www.yowconference.com.au/melbourne/events_tracks/event_details.html?eventId=2598, based on his experiences leading a team that has built arguably the biggest Rails app in the world.
+
+p. Neal's invigorating talk reviewed the lessons learned in the project such as effective testing strategies. For example, he unsurprisingly impressed the audience by relating how, with the help of "UnitRecord":https://github.com/dan-manges/unit-record, the team was able to run just under 9,000 tests in 41 seconds! Neal described other testing techniques as well as strategies for aspects such as continuous integration, effective communication in a development team and automation. Crucially, he emphasised ingenious ways that the team kept a sense of fun to the fore at all times.
+
+p. There were many more nuggets that this talk contained. If you get the chance to hear Neal speak I thoroughly recommend it.
+
+h3. Keynote by Guy Steele and Richard Gabriel
+
+p. I cannot find the words to adequately describe the gem that was the "50 in 50":http://www.yowconference.com.au/melbourne/events_tracks/event_details.html?eventId=2596 keynote by Guy Steele and Richard Gabriel.
+
+p. So I'll keep my reflections brief. Wise, well-informed and witty, this talk by Guy and Richard was rich in its perspective of the often weird and wonderful paths that computer languages have followed over the last 50 years. A perfect tonic to prepare us for the conference party!
+
+h3. Eric Evans
+
+p. Getting a message across through dry humour is a gift which Eric Evans demonstrated amply in his talk entitled "Strategic Design: Avoiding Responsibility Traps":http://www.yowconference.com.au/melbourne/events_tracks/event_details.html?eventId=2637.
+
+p. Eric led the audience through a story about several sub-optimal scenarios that can eventuate when a software development team is faced with the challenge of augmenting a legacy system. His key messages included the importance of distilling the core domain, using context mapping and building an anti-corruption layer. Eric's parting recommendations were to:
+
+* look for assets in the legacy
+* work in the core domain
+
+p. And, of course, to make use of his book, "Domain-Driven Design":http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215, even if only to read Chapter 14.
+
+h3. Jason Yip
+
+p. I love the tagline on Jason Yip's blog: "Making software is about making people." So true. 
+
+p. Jason's talk, "Row Together, Row in the Right Direction, Row Faster: Improving alignment and throughput in software development":http://www.yowconference.com.au/melbourne/events_tracks/event_details.html?eventId=2619, tuned into vital aspects of collaboration, whether at the level of a team, department or organisation.
+
+p. After setting the stage with a few amusing but relevant anecdotes, Jason expanded on his contention that groups of people maximise their collective effectiveness by:
+
+* being aligned and coordinated;
+* sharing the same direction and vision;
+* improving productivity by mastering skills
+
+p. Jason emphasised that what he had presented was intended to be more of a useful metaphor than the result of rigorous analysis. It would be interesting to see Jason's observations validated by quantitative research. Meanwhile, I'm glad I listened to Jason's typically thoughtful, entertaining and thought-provoking talk.
+
+h3. Dan Ingalls
+
+p. As someone who, when first exploring object-oriented programming cut his teeth on Smalltalk, I was fortunatate to be able to listen to Dan Ingalls reminisce about his "Forty Years of Fun with Computers":http://www.yowconference.com.au/melbourne/events_tracks/event_details.html?eventId=2738.
+
+p. It was amazing to listen to Dan speak so humbly about his experiences when they included working with Alan Kay and attending lectures given by Don Knuth, not to mention being the principal architect of five generations of Smalltalk environments. Regardless of all his achievements what shone through above all was his enduring sense of fun. I won't attempt to describe the specifics of Dan's talk. Suffice to say it was a privilege to be there and a special way to end the conference. If you get the chance to hear Dan speak, grasp it!
+
+p. Dan concluded his talk with this wonderful advice:
+
+bq. "Keep things simple, general and flexible and you'll have fun."
+
+h2. A Conference to be Recommended
+
+p. So there you have it. Five of my favourite talks from the YOW! Australia 2010 Developer Conference. 
+
+p. Belated congratulations to Dave Thomas and Lisa Cumes from Bedarra Research Labs for attracting such a superb collection of speakers covering a broad range of topics. The whole conference was a blast and I certainly wholeheartedly recommend the 2011 edition to other Australian developers.

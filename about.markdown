@@ -1,18 +1,16 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Having commenced working in the industry in 1983, I have accumulated technical experience on a diverse range of platforms.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+My roles have covered the full life-cycle of software development. I have successfully led and contributed to teams that have delivered applications to corporate, small to medium business, NGOs and government organisations in Australia and the United Kingdom.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Read on to learn more about my professional background and what [others have had to say](/testimonials) about my work.
 
-
-[jekyll-organization]: https://github.com/jekyll
+{% for achievement in site.achievements %}
+  <h3>{{ achievement.heading }}</h3>
+  {{ achievement.content }}
+{% endfor %}

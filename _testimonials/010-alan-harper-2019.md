@@ -1,0 +1,15 @@
+---
+layout: none
+provider: Alan Harper, Head of Engineering, Clover.com.au (2019)
+---
+
+Keith was immensely helpful as soon as he joined Clover. We had a big
+Rails migration project that had been stalled for quite some time, but
+with his experience the project was quickly unstuck, and progress made
+on this business critical migration.
+
+He also helped mature our remote working practices, with better routines
+and better communication.
+
+I enjoyed the time I worked with Keith and hope I can work with him
+again in the future.

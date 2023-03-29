@@ -1,0 +1,63 @@
+---
+layout: post
+title: Thanking the Australian Ruby Community
+date: 2013-07-17
+permalink: /blog/archives/2013-07-17-thanking-the-australian-ruby-community
+---
+It was during the recent "Ruby Rogues episode about Community Hacks":http://rubyrogues.com/112-rr-community-hacks/ that the suggestion was made that we, as a programming community need more blog posts.
+
+There is no doubt that the onslaught of Twitter has resulted in a proliferation of pithy comments that fit into 140 characters together with the inevitable exchanges between other Twitter users that follow. This is all fine in itself, very social and lots of fun. However, longer form, more thoughful blog posts have been somewhat of a casualty.
+
+So I've decided to make my own attempt at rectifying this. In the spirit of the RR Community Hacks podcast, I want to thank a few people in the Australian Ruby community who have enriched my professional and social life over the last 6 or 7 years. Forgive me if I reminisce a little along the way.
+
+h2. A Community Journey
+
+h3. First Encounters
+
+Having first explored Ruby in 2004 and stumbled across Rails the day DHH announced he had open-sourced it, my introduction to the Australian Ruby community came by chance at the Open Source Developers' Conference in Melbourne in 2006. A colleague of mine at the time, Alan Green, was co-presenting "a paper comparing Django and Rails":http://osdcpapers.cgpublisher.com/product/pub.84/prod.29 with a fellow named "Ben Askins":https://github.com/benaskins.
+
+Following the conference, Ben kindly introduced me to the Sydney Ruby community. He also organised the first "Rails Camp":http://railscamps.com/ in June 2007, which I attended. It goes without saying that I have much to thank Ben for.
+
+h3. The Sydney Ruby Scene
+
+I recall, in the early days, it was people like "Tim Lucas":https://twitter.com/toolmantim and "Jason Crane":https://twitter.com/snapperwolf who spearheaded the monthly Sydney Rails meetup, a forerunner of the event now affectionately known as "rorosyd". Another person who actively supported the group's online connections was "Lachie Cox":https://twitter.com/lachiecox. Who else remembers the "number5" bot in the #roro IRC channel?
+
+Then there was "Matt Allen":https://twitter.com/mattallen who, intriguingly in retrospect, had a not insignificant hand in helping me land my first Rails freelance gig back in late 2007. Little did "Matta" know it then, but he was putting in some early practice for his "current role":http://www.lookahead.com.au/!
+
+h3. Rails Camps
+
+I mentioned the first Rails Camp, which Ben Askins organised conveniently at Somersby, just up the road from where I live. Unfortunately I was unable to attend the second Rails Camp, held in late 2007 near Melbourne. However, I have certainly come to know and respect "Pat Allan":https://twitter.com/pat, the organiser of that camp. I think it is fair to say that Pat has established himself as the Rails Camp "champion", spreading it to other parts of the globe including the UK, Denmark, Germany, USA, Poland and Spain. The only Rails Camp outside of Australia that I have been to was at Mt Cheeseman in New Zealand in 2012. Of course, Pat was there!
+
+The uninitiated reader may wonder why I'm such a fan of Rails Camps. Maybe that's the subject of another post. Suffice to say that, if you're at all interested in Ruby and getting to know people in the Australian Ruby community in a fun-filled, self-organising environment - and learning along the way - come along the next Rails Camp!
+
+h3. Ruby Open Source
+
+When I think of Australians who have contributed to open source Ruby, Pat Allan comes to mind again for his work on "Thinking Sphinx":http://pat.github.io/thinking-sphinx/ as well as sharing his knowledge about "Crafting Gems":http://confreaks.com/videos/2482-railsconf2013-crafting-gems.
+
+Others who have created useful, well-received Ruby gems include "Justin French":http://justinfrench.com/, for his work on "Formtastic":https://github.com/justinfrench/formtastic, and "Pete Yandell":http://notahat.com/, who created "Machinist":https://github.com/notahat/machinist.
+
+Pat, Justin and Pete are just three of many Australian Rubyists who have inspired me by their contribution to open source.
+
+h3. Ongoing Encouragement
+
+I love the supportive nature of people in the Ruby community. Without wishing to make it sound like a cult whose members are a cut above other developers, I'm certainly grateful for the encouragement I've received from many quarters. "Martin Stannard":https://github.com/martinstannard is an example of someone who has continued to encourage me over the last few years and I thank him for his support. Was it really as long ago as 2008 that we, together with Pat, Matt, "Marcus Crafter":https://twitter.com/crafterm, "Dylan Egan":https://twitter.com/dylanegan and others were in Portland for RailsConf?
+
+h3. RubyConfAU
+
+Being part of the organising crew for the first "Australian Ruby conference":http://www.rubyconf.org.au was a highlight of my career. It wouldn't have been possible without the help of Martin Stannard, "Michael Koukoullis":https://twitter.com/kouky, "Josh Price":https://twitter.com/joshprice and "Sebastian von Conrad":https://twitter.com/vonconrad, not to mention the awesome volunteers who ensured everything ran smoothly at the conference. The backing of "Ruby Australia":http://ruby.org.au also enabled the conference organisation to proceed on a sounder footing. For this I am grateful to "Richie Khoo":https://twitter.com/richiekhoo and Pat Allan (again) for their hard work in establishing Ruby Australia.
+
+Even better, Josh and others have stepped up to the plate to run the next RubyConfAU, in Sydney in February 2014.
+
+h3. The Future
+
+A critical component of the success of any community is renewal and revitalisation. For example, whilst I convened Sydney Ruby meetups for a while, I'm grateful to "Steven Ringo":https://twitter.com/stevenringo for taking over the baton during the last couple of years. And I'm sure he is grateful to "Andrew Harvey":https://twitter.com/mootpointer, who is stepping into the role next month whilst Steven's attention will be more focussed on the impending birth of another child.
+
+We're currently in a situation where demand for developers exceeds supply. Within the Ruby community, I'm heartened to see efforts to introduce more people to the skills and knowledge necessary to get them started.
+
+"Rails Girls":http://railsgirls.com/ is one movement that is introducing women to Rails. We are fortunate to have people such as "Robert Postill":https://twitter.com/robertpostill, "Nigel Rausch":https://github.com/nigelr, "Elle Meredith":https://twitter.com/aemeredith, and Andrew Harvey to thank for ensuring that events have taken place in Melbourne, Brisbane and Sydney this year. Also, the initiatives of "Mikel Lindsaar":https://twitter.com/lindsaar in starting the _Installfest_ and _Development Hub_ events, as a way of getting new Rails developers started and accelerating their skill development, are to be commended.
+
+h2. In Conclusion
+
+Of course, there are many more people who have inspired me along my journey so far. However, those above sprang most readily to mind when I pondered the question of who in Australia has inspired and helped me so far in my Ruby journey.
+
+Thank you all!

@@ -1,0 +1,91 @@
+---
+layout: post
+title: On Non-Determinism
+date: 2017-11-01
+permalink: /blog/archives/2017-11-01-on-non-determinism
+---
+It's something that irks me.
+
+I've seen it time and time again. Martin Fowler was moved to "write":https://martinfowler.com/articles/nonDeterminism.html about it and "speak":https://www.youtube.com/watch?v=p5Qj75nJPEs#t2m15s about it in 2011. I've stressed it's importance many times since. Again recently I was moved to share it:
+
+!https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--2df49dc7be2e284be3d0f91b8f1de5ac95e04e12/martin-fowler-non-determinism.jpg!
+
+h2. Resistance
+
+My observation has been that developers are resistant to accepting the challenge of battling the scourge of intermittently failing tests.
+
+What is the reason for this resistance? This is something that has intrigued me for years. And I'd like to delve into it in a little more depth.
+
+h3. Time and Effort
+
+I suspect that part of the human impulse to resist addressing non-deterministic tests is the intuition that to accept such a challenge might lead to much time and effort expended for little result. If that is the case, believe me, I understand. Fixing this sort of problem is not for those faint of heart!
+
+Having experienced the struggle of identifying what causes an intermittent failure, I know it isn't easy to unearth the root cause.
+
+h3. Quarantining
+
+In my experience there is a palpable resistance to Martin Fowler's suggested approach of quarantining non-deterministic tests. On one level, this bewilders me. As Martin illustrates, if a test cannot be relied upon to pass or fail, it is worse than useless. It is infecting the whole test suite. So, the sane approach is to, at least temporarily, remove it from the test suite.
+
+Whenever I have suggested this, I have been met with resistence. Developers claim that the test is useful, that it provides protection as part of the regression suite against bugs being introduced. I'm still searching for a way of countering this argument, which is clearly fallacious. As Martin quite rightly asserts, if a test cannot be relied upon to pass or fail against the same codebase, it is worse than useless and must be immediately quarantined!
+
+Sure, there is extra effort involved in configuring the quarantining process. The use of "RSpec tags":https://relishapp.com/rspec/rspec-core/docs/command-line/tag-option is handy for this. Then there is the perceived risk of the team forgetting to fix the quarantined test. Again, it requires some effort to set up, but it is certainly possible to automate warnings to the team about tests that have been quarantined for too long as well as build pipelines that contain too many quarantined tests.
+
+h3. Removal
+
+Of course, another possible response to a troublesome non-deterministic test is to simply remove it from the suite.
+
+This may sound radical, but let's consider the situation from a cost/benefit perspective. If a test cannot be guaranteed to reliably pass or fail then it is clearly not providing much benefit. If it takes considerable effort to debug and still cannot be guaranteed to reliably pass or fail, what should the developers make of it? It has clearly already absorbed considerable cost. This leaves the question of potential benefit.
+
+A related question is: how crucial is this test as part of the suite? Is it a vital part of the test suite? If the answer to this question is "yes" then it is appropriate to continue trying to solve the non-deterministic behaviour. However, if the answer is "no", there seems little value in keeping the test within the suite.
+
+h3. Laziness
+
+People are naturally lazy. Why do something that requires effort unless you really have to or there is a clear benefit that will accrue to you?
+
+If a developer is working on a pull request, pushes a commit and the resultant build on the CI server fails with an error that is obviously unrelated to their pull request, what's the easiest thing to do? Click the button to rebuild the test, of course! The temptation to take this action, even if the developer in question has the appreciation that this may not be a helpful response in the even slightly longer term for his or her colleagues, can be compelling.
+
+I'm not sure of the best way of countering this. Appealing to the greater good?
+
+h3. Priority
+
+Usually when a developer notices an intermittently failing test their focus is elsewhere. They may be working on a feature and notice that the build fails due to a non-deterministic test that is unrelated to their feature. Or they may be watching the master build in preparation for a deployment. Understandably the priority in these scenarios is to enable the feature to be merged or the deployment to go ahead.
+
+The key here is to at least take some action to fix the non-determinism, even if it is to schedule some work to rectify the situation later. Unfortunately, in my experience, the tendency is often to ignore the intermittently failing test.
+
+h2. Causes
+
+As Martin Fowler points out, there are many causes of non-deterministic tests. Among them are:
+
+* lack of isolation
+* asynchronous behaviour
+* remote services
+* time
+* resource leaks
+
+Each of these deserves an article on their own. In "Rails":http://rubyonrails.org/ applications, the type of intermittent failure I've seen most is due to asynchronous JavaScript. Indeed, it is interesting to note that "An Empirical Analysis of Flaky Tests":http://mir.cs.illinois.edu/%7Eqluo2/fse14LuoHEM.pdf found that 45% of flaky tests were due to the test execution making an asynchronous call and not properly waiting for the result of the call to become available before using it.
+
+Much has been written elsewhere about dealing with non-deterministic tests that use "RSpec":http://rspec.info/ and "Capybara":https://github.com/teamcapybara/capybara. For example:
+
+* Maria Verba gave some "tips and best practices for identifying and fixing bad tests":https://www.joinhandshake.com/engineering/testing/automation/best-practices/2016/11/30/making-your-specs-bulletproof-tips-and-best-practices.html
+* Nebojša Stričević gave some guidance about "how to deal with and eliminate flaky tests":https://semaphoreci.com/community/tutorials/how-to-deal-with-and-eliminate-flaky-tests
+* Gabe Berke-Williams wrote about giving Capybara a helping hand by "introducing a wait_for_ajax helper":https://robots.thoughtbot.com/automatically-wait-for-ajax-with-capybara
+
+Added to this, Keith Pitt has detailed "5 ways we’ve improved flakey test debugging":https://building.buildkite.com/5-ways-weve-improved-flakey-test-debugging-4b3cfb9f27c8, which focuses more on how to capture the database state when a test fails intermittently.
+
+They are all worth reading. However, what I'm pondering in this article is more to do with motivation.
+
+h2. A Way Forward
+
+How can we best encourage developers to tackle non-deterministic tests?
+
+Expecting the person who first notices the failing test to fix it is probably not a good approach. After all, that person is likely to be feeling frustrated or even angry that an unrelated test failure is holding up their progress.
+
+A colleague of mine recently suggested assigning the task of fixing a non-deterministic test to the last person who changed that test. It's a helpful suggestion that at least circumvents the frustration that I wrote about earlier. It also assumes that the team member assigned to fix the flaky test is willing and capable.
+
+Of course, keeping a CI build healthy is a shared responsibility. The build is more likely to be healthy if all members of the team contribute to meeting the challenge posed by non-determinism.
+
+h3. A Parting Thought
+
+In my case, one thing I need to be mindful of is to be careful not to let the frustration that I sometimes feel become counter-productive. As Kent Beck "implied a while back":https://twitter.com/KentBeck/status/675800995427827712, as well as working in small increments, it is important to be both kind and honest.
+
+If I follow that advice hopefully I will respond to discovering non-deterministic tests by gradually finding ways to help the team to handle the challenge of fixing them more successfully.

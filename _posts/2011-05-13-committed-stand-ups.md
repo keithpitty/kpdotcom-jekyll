@@ -1,0 +1,26 @@
+---
+layout: post
+title: Committed Stand-Ups
+date: 2011-05-13
+permalink: /blog/archives/2011-05-13-committed-stand-ups
+---
+
+How effective is your daily stand-up meeting? Is it energising the team
+or does it have a “going through the motions” feel to it?
+
+In his book, [*The Agile
+Samurai*](http://pragprog.com/titles/jtrap/the-agile-samurai), Jonathan
+Rasmusson recommends that each person tell the rest of the team:
+
+-   What you did to change the world yesterday
+-   How you are going to crush it today
+-   How you are going to blast though any obstacles unfortunate enough
+    to be standing in your way
+
+It’s a change of emphasis that I think is worth trying. As Jonathan
+says, it is a demonstration of commitment to the team and “dramatically
+increases the chances of you getting it done.”
+
+However, if being so positive feels uncomfortable or forced, this
+probably indicates that there are other problems affecting the team’s
+morale that need to be dealt with.

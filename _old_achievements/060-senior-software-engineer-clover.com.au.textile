@@ -1,0 +1,12 @@
+---
+layout: none
+heading: Senior Software Engineer, Clover.com.au (2019)
+---
+I joined "Clover.com.au":https://www.clover.com.au in June 2019.
+
+During my first few months the bulk of my work was focussed on re-engineering the main Ruby on Rails application to support many advisors. This included:
+
+* designing and implementing database table and ActiveRecord class relationships to support multi-tenancy
+* converting keys for all tables from integers to UUIDs
+* merging tables from two PostgreSQL databases into one
+* planning the steps needed to enable the platform to support many tenants

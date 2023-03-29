@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+node_modules
+import-from-db
+tomd
+tomd_post.awk
+tomd_pre.awk

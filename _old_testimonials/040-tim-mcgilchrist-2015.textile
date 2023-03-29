@@ -1,0 +1,5 @@
+---
+layout: none
+provider: Tim McGilchrist, Former colleague at Blake eLearning (2015)
+---
+I worked with Keith for a couple of years at Blake Education. He is a very proficient and professional developer, as well as a great bloke to have around the workplace. Keith could always be relied on to get the job done and had a keen interest in improving how we (the developers) could improve our processes and code.

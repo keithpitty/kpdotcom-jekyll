@@ -1,0 +1,22 @@
+---
+layout: none
+provider: Owen Butler, Senior Engineering Manager, Envato (2022)
+---
+
+Keith is an outstanding Engineering Leader.
+
+I was lucky to work alongside Keith for close to a year, managing a
+large team of SREs.
+
+Keith possesses an extraordinary amount of development, delivery and
+process experience. He was able to instantly apply that knowledge to:
+
+-   Improve the way our team worked together, levelling up the
+    facilitation in our retros and improving the way we communicated
+    across our distributed team
+-   Improve the way we classified and tracked work
+-   Set clear delivery goals and helped the team achieve them
+
+Alongside that, Keith is a caring and knowledgeable manager of people.
+Keith spends quality time with his reports, mentoring them, working with
+them to grow and succeed.

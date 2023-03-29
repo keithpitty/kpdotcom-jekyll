@@ -1,0 +1,34 @@
+---
+layout: post
+title: Twitter Bootstrap to the Rescue
+date: 2013-01-28
+permalink: /blog/archives/2013-01-28-twitter-bootstrap-to-the-rescue
+---
+OK, I admit it. I have finally acknowledged that web design is something I should not waste my time on.
+
+The design of this site has gone through several phases, all my own attempts and none that I was satisfied with. So yesterday I finally bit the bullet, jettisoned my old home grown styles and images and resorted to "Twitter Bootstrap":http://twitter.github.com/bootstrap.
+
+Whilst a quick glance reveals the obvious use of Twitter Bootstrap, I'm encouraged by the result. I can now rely on a popular, well-designed, well-documented tool to produce an acceptable looking site rather than struggling with my own incompetence. For me, Twitter Bootstrap hits the sweet spot. After all, it is aimed at programmers who don't have good web design skills.
+
+h2. The Conversion
+
+For those interested in what it took to convert a Rails site to use Twitter Bootstrap, here are some of the steps I followed:
+
+* installed the "twitter-boostrap-rails":https://github.com/seyhunak/twitter-bootstrap-rails gem
+* enabled the Twitter Bootstrap responsive styles
+* tailored my layouts to use Twitter Bootstrap
+* removed my old styles
+* converted forms to use the "simple_form":https://github.com/plataformatec/simple_form gem, which supports Twitter Bootstrap
+* made use of the various classes in Twitter Bootstrap to easily improve the appearance of forms, buttons and tables
+
+h2. Responsive Design
+
+One aspect I'm delighted with is the fact that Twitter Bootstrap supports responsive design out of the box. I've found it interesting that one of the barriers to adding content to this site has been it's poor display on mobile devices. Not only did the site look ugly, but it didn't facilitate easy browsing on mobiles.
+
+Not any more. As a by-product of using Twitter Bootstrap, my site is now responsive!
+
+h2. Conclusion
+
+Having used Twitter Bootstrap before, it was a fairly painless exercise to convert the site. All it took was a rainy day on a long weekend to finally encourage me to bite the bullet.
+
+Now I have one less excuse for writing blog posts!

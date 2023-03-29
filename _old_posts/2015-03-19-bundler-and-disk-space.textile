@@ -1,0 +1,60 @@
+---
+layout: post
+title: Bundler and Disk Space
+date: 2015-03-19
+permalink: /blog/archives/2015-03-19-bundler-and-disk-space
+---
+Earlier this week I noticed that my MacBook Pro's 256GB hard disk was 95% full, which prompted me to start investigating what I could remove in order to free up space.
+
+h2. ncdu
+
+Having remembered that on a previous occasion a work colleague had suggested using "ncdu":http://dev.yorhel.nl/ncdu, I started this very helpful tool and task-switched whilst waiting for it to finish.
+
+When I delved into what ncdu had to show me about large files, I eventually made an interesting discovery.
+
+After regaining some space by deleting some Apple Mail log files, I was surprised to find many git versions of some internal RubyGems that we use at work. Some of these are large. All of them are referred to in Gemfiles by their GitHub repositories, or in other words they are _git referenced gems_ defined in the Gemfile like this:
+
+<code lang='ruby'>
+gem 'blake-data-source', git: 'git@github.com:blake-education/blake-data-source.git', branch: 'develop'
+</code>
+
+The result was this:
+
+!https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--c8085fe5a731dc3f12ee3f06de1c9cc16bcb893d/ncdu-gems.jpg!
+
+That's right. The gems for Ruby 2.1.2 were taking up 10.5GB of disk space! Looking closely, I could see that there were many old versions of large gems.
+
+At this point it is worth pointing out that I was using "rbenv":https://github.com/sstephenson/rbenv and "Bundler":http://bundler.io/ to manage my gems in an unsophisticated manner. This had unintended consequences as I will explain further.
+
+h2. Cleaning up old versions of gems
+
+h3. gem cleanup
+
+One way of cleaning up old versions of gems is to use the <code>gem cleanup</code> command. However, whilst this will remove old versions of gems that have been tagged with version numbers, it won't include git referenced gems in it's sweep.
+
+h3. bundle clean
+
+Another command that can help clean up old gem versions is <code>bundle clean --force</code>. This is definitely a "helpful command":http://bundler.io/v1.8/bundle_clean.html but one to be used "with caution":http://patshaughnessy.net/2011/11/5/besides-being-faster-what-else-is-new-in-bundler-1-1.
+
+In my case I had to be aware that, since this command would clean up gem versions unused in my directory, it would also clean up gems used by other projects using the same Ruby version.
+
+h3. bundle --path
+
+Advice from my colleague "Josh Kunzmann":https://github.com/kunzmann quickly allowed me to see the solution. That was to run <code>bundle clean --force</code> and then change to using the <code>bundle install --path</code> command, or <code>bundle --path</code> for short. As the "documentation":http://bundler.io/v1.8/bundle_install.html says, the <code>--path</code> option allows you to:
+
+bq. Specify a different path than the system default ($BUNDLE_PATH or $GEM_HOME). Bundler will remember this value for future installs on this machine
+
+And, since I am in the habit of using bash aliases and "tmuxinator":https://github.com/tmuxinator/tmuxinator, I am now using aliases like this to start project coding sessions:
+
+<code>
+alias mkp='bundle --path ~/.appgems/kpdotcom --clean && mux kp'
+</code>
+
+In this way I should be able to keep the disk space used by RubyGems under control. It also ensures that dependent gem versions are installed before I fire up tmuxinator.
+
+h2. Conclusion
+
+The moral of the story is twofold:
+
+# *ncdu* is a very useful tool for discovering large files on your hard disk
+# <code>bundle --path your/chosen/path --clean</code> is a good way to ensure that old versions of git referenced gems do not accumulate

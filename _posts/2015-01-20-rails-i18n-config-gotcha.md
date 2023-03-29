@@ -1,0 +1,46 @@
+---
+layout: post
+title: Rails i18n Config Gotcha
+date: 2015-01-20
+permalink: /blog/archives/2015-01-20-rails-i18n-config-gotcha
+---
+
+Today I battled a subtle problem which surfaced when our Rails
+application was updated from Rails 4.012 to 4.0.13.
+
+Several tests started failing with <code>I18n::InvalidLocale</code>
+errors.
+
+After some debugging I found that the following line of configuration
+<code>config/application.rb</code> was not being respected:
+
+<code lang='ruby'>  
+I18n.enforce_available_locales = false  
+</code>
+
+This line was introduced when the application was upgraded to Rails
+4.0.2 a year ago. At the time, as [this stackoverflow
+question](http://stackoverflow.com/questions/20361428/rails-i18n-validation-deprecation-warning)
+highlights, the following deprecation warning message advised to do
+this:
+
+> \[deprecated\] I18n.enforce_available_locales will default to true in
+> the future. If you really want to skip validation of your locale you
+> can set I18n.enforce_available_locales = false to avoid this message.
+
+However, as I digged deeper into the [Rails 4.0.13
+changes](https://github.com/rails/rails/compare/v4.0.12...v4.0.13), I
+found that they included [this
+commit](https://github.com/rails/rails/commit/26cf9af9e5fd0fb08160adf296e67834b067976d#diff-5a01fa54cd7e307fec45a4c5d819c63a),
+which changed the behaviour of setting i18n configuration values. It now
+ignores <code lang='ruby'>I18n.enforce_available_locales = false</code>.
+
+The solution is to follow the [relevant section of the Rails
+Guides](http://guides.rubyonrails.org/v4.0.13/configuring.html#configuring-i18n)
+and configure as follows:
+
+<code lang='ruby'>  
+config.i18n.enforce_available_locales = false  
+</code>
+
+It’s a subtle change that caught us out.

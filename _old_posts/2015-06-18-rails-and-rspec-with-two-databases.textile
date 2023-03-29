@@ -1,0 +1,122 @@
+---
+layout: post
+title: Rails and RSpec with Two Databases
+date: 2015-06-18
+permalink: /blog/archives/2015-06-18-rails-and-rspec-with-two-databases
+---
+Maintaining Rails applications in the real world is not always straight-forward.
+
+Recently I needed to enable a Rails 4.0.13 application which used a MySQL database as it's default to also use a PostgreSQL database. Being a good TDD citizen, I also needed to ensure that the new tests would run in our CI environment.
+
+Whilst I did find a "helpful post":http://blog.nistu.de/2012/03/25/multi-database-setup-with-rails-and-rspec, it didn't tell me everything I needed to know. So I thought I'd share what I did.
+
+h2. Database Configuration
+
+First of all, I configured environments for the PostgreSQL database within <code>config/database.yml</code> as follows:
+
+<code lang='ruby'>
+# in addition to existing contents
+postgres: &postgresql_defaults
+  adapter: postgresql
+  pool: 10
+  timeout: 60000
+  host: localhost
+  template: template0
+
+development_foo:
+  database: foo_development
+  <<: *postgresql_defaults
+
+test_foo:
+  database: foo_test
+  <<: *postgresql_defaults
+
+staging_foo:
+  database: foo_staging
+  <<: *postgresql_defaults
+
+production_foo:
+  database: foo_production
+  <<: *postgresql_defaults
+</code>
+
+h2. Establish Connection in Model Class
+
+In my case, I only needed to use one model class backed by a table from the extra database. Let's imaginatively call this class <code>Bar</code>. So the class would be defined like this:
+
+<code lang='ruby'>
+class Bar < ActiveRecord::Base
+  establish_connection "#{Rails.env}_foo"
+
+# the rest of the class
+end
+</code>
+
+Note that you probably want to introduce an abstract class which establishes the connection if you have more than one model class which needs it.
+
+h2. Augment rake db tasks
+
+So far so good. The next step was to ensure that the CI script on "Buildkite":https://buildkite.com/ handled the extra database. As you would expect, the script prepares to run the tests by dropping, creating and loading the schema of the database. To do this it uses some code common to all our builds, which includes running <code>bundle exec rake db:drop</code> and <code>bundle exec rake db:create db:schema:load</code>.
+
+I wanted to find a way for the setup of the extra database to piggy-back on these rake tasks and, in so doing, use the existing script unchanged. I discovered I could do so by using the <code>Rake::Task#enhance</code> method. This allowed the rake db tasks to be augmented as follows:
+
+<code lang='ruby'>
+namespace :db do
+  task drop_foo: :environment do
+    ActiveRecord::Tasks::DatabaseTasks.drop(foo_db_config)
+  end
+
+  task create_foo: :environment do
+    ActiveRecord::Tasks::DatabaseTasks.create(foo_db_config)
+    reset_connection_to_mysql_db
+  end
+
+  namespace :structure do
+    task load_foo: :environment do
+      if File.exist?(foo_structure_filename)
+        ActiveRecord::Tasks::DatabaseTasks.structure_load(foo_db_config, foo_structure_filename)
+      end
+    end
+  end
+end
+
+def foo_structure_filename
+  "#{Rails.root}/db/foo_structure.sql"
+end
+
+def foo_db_config
+  ActiveRecord::Base.configurations["#{Rails.env}_foo"]
+end
+
+def default_db_config
+  ActiveRecord::Base.configurations["#{Rails.env}"]
+end
+
+def reset_connection_to_mysql_db
+  ActiveRecord::Base.establish_connection(default_db_config)
+end
+
+Rake::Task['db:drop'].enhance do
+  Rake::Task['db:drop_foo'].invoke
+end
+
+Rake::Task['db:create'].enhance do
+  Rake::Task['db:create_foo'].invoke
+end
+
+Rake::Task['db:schema:load'].enhance do
+  Rake::Task['db:structure:load_foo'].invoke
+end
+</code>
+
+There are a couple of things I should explain here.
+
+Let's assume <code>FooApp</code> is the name of application which has <code>foo</code> as it's default database. <code>FooApp</code> uses SQL rather than Ruby to define it's schema so I copied <code>db/foo_structure.sql</code> from <code>db/structure.sql</code> in <code>FooApp</code>.
+
+Also worthy of close attention is the call to the <code>reset_connection_to_mysql_db</code> method after the <code>create_foo</code> task. Without this, <code>rake db:schema:load</code> will load the default MySQL schema into the PostgreSQL database!
+
+h2. Conclusion
+
+So there you have it. How to add an extra database to your Rails application and not break CI in the process. Discovering how to use the <code>Rake::Task#enhance</code> method to facilitate this was my main motivation for sharing this.
+
+I hope it helps someone else.

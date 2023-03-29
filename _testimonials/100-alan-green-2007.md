@@ -1,0 +1,9 @@
+---
+layout: none
+provider: Alan Green, Former Colleague at Cirrus Technologies Pty. Ltd. (2007)
+---
+
+I have worked alongside Keith on a number of projects. I’m impressed
+with his ability to address complex customer requirements on one hand,
+whilst attending to a mass of technical detail on the other. I continue
+to recommend Keith’s services.

@@ -1,0 +1,5 @@
+---
+layout: none
+provider: Travis Winters, Former colleague at The Conversation (2016)
+---
+Keith was such a delight to work with — experienced, thoughtful and enthusiastic, not to mention an all-round good guy. As a remote team member, he put extra effort into communication and collaboration, and that made working with Keith productive and enjoyable. His passion for Ruby along with his commitment to the Ruby community means you're guaranteed to always learn something from his approach and enthusiasm for technology.

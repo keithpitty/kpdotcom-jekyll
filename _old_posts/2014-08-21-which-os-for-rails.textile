@@ -1,0 +1,91 @@
+---
+layout: post
+title: Which OS for Rails?
+date: 2014-08-21
+permalink: /blog/archives/2014-08-21-which-os-for-rails
+---
+p. Why write about this topic? Isn't the answer obvious?
+
+p. Maybe for many.
+
+p. However, thanks in large part to the initiatives of "reInteractive":http://reinteractive.net/ and "Ruby Australia":http://ruby.org.au, there is an increasing number of Australian newcomers to Rails. Many are predominantly familiar with Windows when it comes to the operating system on their own machine.
+
+h2. The Background to the Question
+
+p. Who prompted this post? It was "Rosie Williams":https://twitter.com/info_aus when she posed the following question on the Rails Oceania mailing list:
+
+bq. I've begun learning RoR but want to know what operating system to continue with that is most in demand in the market? To date I've done most of my development on Windows (which dual boots to Linux which I've not really used). I am considering buying a new Mac for development but wondering whether I ought to be doing my RoR on Linux? Or does it not really matter?
+
+Thanks to the generosity of the community, Rosie has received "many helpful suggestions":https://groups.google.com/forum/#!topic/rails-oceania/0LQPCNbS5Kk.
+
+h2. The Short Answer
+
+p. Most Rails developers use OS X or Linux. The majority use OS X.
+
+h2. Assuming OS X, What Next?
+
+p. Given that most Rails developers use OS X, I am one of them and Rosie now has a new Macbook Air, I will continue this post on the assumption that OS X has been chosen. What will the developer want to focus on next when preparing to start their first Rails application on OS X?
+
+h3. The Command Line
+
+p. I was going to start with Homebrew but I think there's an important step before that. Often newcomers to Rails who are used to Windows do not have familiarity with using the command line.
+
+p. I think it is important to stress that if you want to dive into web development with Ruby on Rails in a serious way, you absolutely need to develop a sufficient level of comfort with using the command line. In OS X, that can be using "bash":https://www.gnu.org/software/bash/bash.html via Terminal. Personally, I prefer "iTerm2":http://iterm2.com/ to Terminal. And many developers prefer "zsh":http://www.zsh.org/ to bash.
+
+p. In any case, the important thing is this: embrace the command line. You are going to need to depend upon it!
+
+h3. Xcode Command Line Tools
+
+p. As keen as I am to mention that you'll need Homebrew, before then you are going to need to install Apple's "Xcode":https://developer.apple.com/xcode/ command line tools. Over time Apple has changed the method for installing these tool tools. At the time of writing, you need to "register":https://developer.apple.com/register as an Apple developer and then sign into the Apple developer "downloads site":https://developer.apple.com/downloads so that you can download and install the command line tools.
+
+p. *Update:* An easier method of installing Command Line Tools, namely running <code>xcode-select --install</code> from the command line, has been known to work. It's worth trying this first before resorting to registering and downloading as described above.
+
+h3. Homebrew
+
+p. OK, next up is "Homebrew":http://brew.sh/, the package manager that is simply indispensible to developers using OS X. Throughout your journey as a Rails developer using a Mac, there will be many occasions when you will need to install software on which your application depends. It might be "PostgreSQL":http://www.postgresql.org/. Or it may be "imagemagick":http://www.imagemagick.org/. Or "git":http://git-scm.com/. In almost every case you will simply be able to run <code>brew install <package-name></code> from the command line and Bob's your uncle.
+
+p. Notice I mentioned using the command line! Anyway, install Homebrew and let it do your bidding. And once you have, get into the habit of using <code>brew update</code>, <code>brew outdated</code>, <code>brew upgrade</code>, <code>brew cleanup</code> and <code>brew doctor</code> to keep your Homebrew packages in good shape.
+
+h3. Ruby
+
+p. Now, obviously a Ruby on Rails developer needs Ruby on their machine. And, OS X does indeed come with Ruby installed. However, it is almost certainly an older version than you will need. At the time of writing, the latest version of Ruby is 2.1.2.
+
+p. To install and manage Ruby versions, unless you are going to compile from source manually, you have three choices:
+
+* "RVM":http://rvm.io/
+* "rbenv":https://github.com/sstephenson/rbenv
+* "chruby":https://github.com/postmodern/chruby
+
+p. These are listed in chronological order. I have happily used rbenv for some time, having discarded RVM. Many Ruby developers whom I respect recommend chruby. Pick one and install the latest version of Ruby.
+
+p. *Update:* If you would like to know more about each of these Ruby version managers, I recommend you listen to "Episode 169":http://rubyrogues.com/169-rr-version-managers-with-michal-papis-mislav-maronic-and-postmodern-mod-iii/ of the Ruby Rogues podcast.
+
+h3. RubyGems
+
+p. Fortunately, RubyGems, the default package manager for Ruby, is part of the Ruby standard library, as of version 1.9. So, once you have installed Ruby, you will have RubyGems at your disposal to install software such as Ruby on Rails.
+
+h3. Rails
+
+p. Opening your trusty command line (e.g. Terminal), run the command <code>gem install rails</code>, wait for a while, and Rails should be installed. Type <code>rails -v</code> to confirm the version that has just been installed for you, courtesy of RubyGems.
+
+h3. Other software
+
+p. Having got this far, you should be ready to start experimenting with Rails development. However, before long you will likely need to install some other software that your application needs.
+
+p. If it is software in the form of a RubyGem, the accepted practice these days is to add the gem to your application's Gemfile and use "bundler":http://bundler.io/ to install and update it. There are all sorts of gems available. The "Ruby Toolbox":https://www.ruby-toolbox.com/ is a good place to explore your options.
+
+p. If the software you need is not built with Ruby, the chances are that you will be able to install it using Homebrew. For example you are definitely going to need "git":http://git-scm.com/. At the command line, enter <code>brew install git</code> and you should be set.
+
+h3. Other considerations
+
+p. Naturally, when dealing with computers, it is not uncommon to be presented with a surprise when you may have expected something to "just work". For example, sometimes on UNIX-based systems, commands fail due to permissions problems and the error message doesn't always make it clear that this is the source of the problem. In this case, get to know "UNIX permissions and chmod":http://www.perlfect.com/articles/chmod.shtml.
+
+p. Something else that I think is worth mentioning is the awesome combination of "Dash":http://kapeli.com/dash and "Alfred":http://www.alfredapp.com/ for quickly looking up API documentation.
+
+p. And, of course, remember that there are always people online who are "willing":http://stackoverflow.com/ "to":https://kiwiirc.com/client/irc.freenode.net/roro "help":https://groups.google.com/forum/#!forum/rails-oceania.
+
+h2. In Conclusion
+
+p. Whilst there are many other aspects that could be covered within the topic of "what to do next having chosen OS X for Rails development", I think I'll leave it there as far as this post goes. And, Rosie Williams, if you're reading, I  wish you all the best with developing Rails applications on your new Macbook Air and I hope that I have been of some help.
+
+p. *Update:* Credit where credit is due. "Leonard Garvey":https://twitter.com/lgarvey has reminded me about his excellent "Rails Install Fest Guide":http://railsinstallfest.org/guides/installfest41/rails_on_mavericks/.

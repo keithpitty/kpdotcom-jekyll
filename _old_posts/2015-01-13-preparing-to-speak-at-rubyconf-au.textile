@@ -1,0 +1,19 @@
+---
+layout: post
+title: Preparing to speak at RubyConf AU
+date: 2015-01-13
+permalink: /blog/archives/2015-01-13-preparing-to-speak-at-rubyconf-au
+---
+The time is getting closer.
+
+In a little over three weeks I'll be speaking at "RubyConf Australia":http://rubyconf.org.au/2015 in Melbourne. To say I'm giving a lot of attention to preparing "my talk":http://lanyrd.com/2015/rubyconf-au/sdghmz/ is an understatement.
+
+It has been a while since I "spoke at a conference":http://keithpitty.com/blog/archives/2008-12-08-automated-testing-with-ruby and, even though I have since spoken at many user group meetings and other tech events such as Rails Camp, I am very conscious of the need to improve.
+
+h2. speaking.io
+
+The point of this post is to acknowledge how much I am appreciating the wonderful "speaking.io":http://speaking.io/ site that "Zach Holman":https://twitter.com/holman has curated. I recall seeing Zach speak at YOW! a few years ago and marvelling at his seemingly effortless delivery. Now I am very grateful for the tips that Zach has provided. Hopefully I'll do them justice.
+
+For now, if you need to prepare a talk, I thoroughly recommend Zach's "speaking.io":http://speaking.io/ site.
+
+I'd better get back to my slides.

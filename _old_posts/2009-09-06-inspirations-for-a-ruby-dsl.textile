@@ -1,0 +1,29 @@
+---
+layout: post
+title: Inspirations for a Ruby DSL
+date: 2009-09-06
+permalink: /blog/archives/2009-09-06-inspirations-for-a-ruby-dsl
+---
+Recently, during discussions with a client about reducing the amount of boilerplate coding that recurs from time to time in the project, the idea of developing a Domain Specific Language (DSL) arose. If you're wondering what a DSL is, "here":http://www.martinfowler.com/bliki/DomainSpecificLanguage.html is what Martin Fowler has to say. Or, you may prefer "this cheeky piece":http://drnicwilliams.com/2006/09/04/trick-natural-language-dsl/ from Dr Nic Williams. 
+
+I've been intrigued by DSLs for some time but not had the motivation to develop one until now.
+
+In preparation, I've gathered a list of resources for writing a DSL in Ruby.
+
+h3. Tutorials
+
+* Russ Olsen's "two":http://jroller.com/rolsen/entry/building_a_dsl_in_ruby "part":http://jroller.com/rolsen/entry/building_a_dsl_in_ruby1 article
+* Chapter 16 on DSLs in Russ Olsen's "Design Patterns in Ruby" book
+* Mischa Fierer's "three":http://themomorohoax.com/2009/02/25/how-to-write-a-clean-ruby-dsl-rails "part":http://themomorohoax.com/2009/02/25/how-to-write-a-clean-ruby-dsl-part-2-line-by-line-with-machinist-rails "article":http://themomorohoax.com/2009/02/25/ruby-dsl-part-3-summary about writing a clean Ruby DSL
+
+h3. Examples
+
+* Pete Yandell's "machinist":http://github.com/notahat/machinist/tree/master
+* Javan Makhmali's whenever, which "provides a clean Ruby syntax for defining cron jobs":http://wiki.github.com/javan/whenever/instructions-and-examples
+* Ben Schwarz's "smoke":http://github.com/benschwarz/smoke (also see "this video":http://www.bestechvideos.com/2009/06/05/smoke-preview)
+* Marcus Crafter's "sprinkle":http://redartisan.com/2008/5/27/sprinkle-intro (also see this "presentation":http://www.slideshare.net/crafterm/sprinkle)
+* "Cucumber":http://cukes.info/, the behaviour driven development DSL
+
+I'm happy with that list of resources but if anyone has any other suggestions please feel free to comment.
+
+My next challenge is to think about the problem domain and design an elegant syntax.

@@ -1,0 +1,14 @@
+---
+layout: none
+provider: Sebastian von Conrad, Development Manager, Envato (2015)
+---
+
+From the moment I met Keith, it was very clear that he cared deeply
+about the people around him and the broader community. I was not at all
+surprised to find him very active in the conversations that led us to
+start a new non-profit organisation to further the Ruby community in
+Australia. We could not have chosen a better person to be our founding
+president, and it was my privilege to work alongside him. As if that was
+not enough, Keith also organised Rails Camp 9 and the inaugural RubyConf
+AU. Few people can say they have done as much as Keith to help the Ruby
+community in Australia.
