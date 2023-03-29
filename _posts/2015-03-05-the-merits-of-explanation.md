@@ -9,17 +9,10 @@ I had the privilege of listening to and meeting [Ed
 Kmett](https://twitter.com/kmett) at the [YOW!
 conference](http://yowconference.com.au/) in Sydney last December.
 
-<figure>
+![](/assets/images/with-ed-kmett.jpg)
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBOUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4d4e652f195d0119c6c89d3faa014aec1fa66a99/with-ed-kmett.jpg)
-
-<figcaption>
-
-Ed is pictured in the centre, Scott Shaw on the right and yours truly on
-the left.[1]
-
-</figcaption>
-</figure>
+*Ed is pictured in the centre, Scott Shaw on the right and yours truly on
+the left.[1]*
 
 ## Learning to Learn
 
