@@ -14,7 +14,7 @@ industry have.
 
 ## The COVID-19 threat
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d7a5d9305858e35c49c8399c3de52b0d19552d64/martin-sanchez-Tzoe6VCvQYg-unsplash.jpg)
+![](/assets/images/martin-sanchez-Tzoe6VCvQYg-unsplash.jpg)
 
 *Photo by [Martin Sanchez](https://unsplash.com/@martinsanchez) on
 Unsplash*
@@ -99,7 +99,7 @@ virtue of being able to see each other as the discussion ensued.
 There are other contexts I would like to relate whilst writing about the
 theme of community in a crisis.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f1ccac0a053460f9d9d5e0f8a1ceb49424b688a1/hoa-fireside.jpg)
+![](/assets/images/hoa-fireside.jpg)
 
 A professional community that I’ve been attracted to and involved in
 since 2018 is the Heart of Agile. Whilst there have been physical
@@ -114,7 +114,7 @@ facilitating a “drop-in” video hook-up. Maybe I’ll remember to drop in,
 we’ll see. Even if I don’t, I love the fact that someone has taken the
 initiative to make this opportunity available.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1db255aae26b8247e4575dd6aebd1c3f88a68342/ruby-au.jpg)
+![](/assets/images/ruby-au.jpg)
 
 Since 2006 I have been privileged to be part of the Australian Ruby
 Community. I’ve enjoyed so many wonderful face to face experiences as
