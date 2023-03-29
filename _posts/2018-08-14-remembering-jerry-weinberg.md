@@ -9,7 +9,7 @@ I’ve been thinking about Jerry Weinberg’s writing over the last few
 days, since his passing moved many including myself to words in his
 honour.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBRUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8305f0b4e277b576f66ce62eebfc17e133dac1e2/jerry.jpg)
+![](/assets/images/jerry.jpg)
 
 His words inspired me.
 
@@ -28,7 +28,7 @@ I introduced my post with a a reference to a picture of a beautiful
 stone wall in my back yard. Whilst I’ve lost the original photo, here is
 a fresh one of the same wall:
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBRZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--734f99b8883815237b3eadfb57c1dae0157a9423/garden-wall.jpg)
+![](/assets/images/garden-wall.jpg)
 
 And here’s what I wrote:
 
