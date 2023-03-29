@@ -23,25 +23,25 @@ Firstly, let’s recap and clarify exactly what a Ruby lambda is.
 
 The <code>lambda</code> method belongs to the <code>Kernel</code>
 module. Since Ruby 1.9 introduced an alternative syntax, a lambda can
-also be identified with the characters <code>-\></code>. So, the
+also be identified with the characters <code>-></code>. So, the
 following two code blocks are equivalent:
 
-<code lang='ruby'>  
-succ = -\>(x) { x + 1 }  
-</code>
+```ruby
+  succ = ->(x) { x + 1 }  
+```
 
-<code lang='ruby'>  
-succ = lambda { \|x\| x + 1 }  
-</code>
+```ruby
+  succ = lambda { |x| x + 1 }  
+```
 
 Another thing to note about lambdas is their *arity*, or how many
 arguments are required when they are called. Every lambda has a precise
 *arity*, which can be tested using the <code>arity</code> method as
 follows:
 
-<code lang='ruby'>  
--\>(x) { x + 1 }.arity \# =\> 1  
-</code>
+```ruby
+  ->(x) { x + 1 }.arity # => 1  
+```
 
 There is much more that can be said about lambdas but I’ll leave that to
 others. For example, Chapter 6, *Methods, Procs, Lambdas, and Closures*
@@ -69,21 +69,21 @@ guides](http://guides.rubyonrails.org/active_record_querying.html#scopes).
 It is also worth keeping in mind that Rails has undergone many changes
 in it’s history. Currently the Rails guides illustrate that this:
 
-<code lang='ruby'>  
-class Article \< ActiveRecord::Base  
-scope :published, -\> { where(published: true) }  
-end  
-</code>
+```ruby
+  class Article < ActiveRecord::Base  
+    scope :published, -> { where(published: true) }  
+  end  
+```
 
 is exactly the same as:
 
-<code lang='ruby'>  
-class Article \< ActiveRecord::Base  
-def self.published  
-where(published: true)  
-end  
-end  
-</code>
+```ruby
+  class Article < ActiveRecord::Base  
+    def self.published  
+      where(published: true)  
+    end  
+  end  
+```
 
 Furthermore, the [Rails Guides section about passing in
 arguments](http://guides.rubyonrails.org/active_record_querying.html#passing-in-arguments)
@@ -94,21 +94,21 @@ advises:
 
 In other words, this:
 
-<code lang='ruby'>  
-class Article \< ActiveRecord::Base  
-def self.created_before(time)  
-where(“created_at \< ?”, time)  
-end  
-end  
-</code>
+```ruby
+  class Article < ActiveRecord::Base  
+    def self.created_before(time)  
+      where("created_at < ?", time)  
+    end  
+  end  
+```
 
 is preferable to:
 
-<code lang='ruby'>  
-class Article \< ActiveRecord::Base  
-scope :created_before, -\>(time) { where(“created_at \< ?”, time) }  
-end  
-</code>
+```ruby
+  class Article < ActiveRecord::Base  
+    scope :created_before, ->(time) { where("created_at < ?", time) }  
+  end  
+```
 
 If you look carefully and test the two styles, you will realise that the
 important part of the code is the <code>where</code> clause. So long as
