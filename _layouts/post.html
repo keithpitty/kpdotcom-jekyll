@@ -5,3 +5,17 @@ layout: default
 <p>{{ page.date | date_to_string }}</p>
 
 {{ content }}
+
+<h4>Other posts</h4>
+
+{% if page.previous.url %}
+  <p>
+    Previous post: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+  </p>
+{% endif %}
+
+{% if page.next.url %}
+  <p>
+    More recently: <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+  </p>
+{% endif %}
