@@ -8,12 +8,12 @@ permalink: /blog/archives/2017-06-01-achieving-flow-in-a-development-team
 One day last June I was moved to [share an opinion on
 Twitter](https://twitter.com/keithpitty/status/745781077126504448).
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--66b662eae10be210b87a1554c2669765c058d98c/team-flow.png)
+![](/assets/images/team-flow.png)
 
 And as the following exchange shows, at least one reader, my former
 colleague SengMing Tan, expressed a desire to know more.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f49c34a520c57ab7c538098d629f186ae947193c/team-flow-sengming.png)
+![](/assets/images/team-flow-sengming.png)
 
 As I foreshadowed, it has taken me a while to get around to elaborating.
 
@@ -61,7 +61,7 @@ that to be a broken state. It is a prompt to the team to give more focus
 to reviewing pull requests until we can merge enough of them and move
 the corresponding Trello cards to the *Ready* column.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBQQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--505380ff01d77121f1a175a39ae2db0aba85e1fe/trello-kanban.jpg)
+![](/assets/images/trello-kanban.jpg)
 
 There are other columns on our development board such as *Confirmed* to
 the left and *Complete* to the right of those shown in the screenshot.
