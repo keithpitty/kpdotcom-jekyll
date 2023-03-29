@@ -5,7 +5,7 @@ date: 2020-10-21
 permalink: /blog/archives/2020-10-21-succeeding-with-remote-retrospectives
 ---
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a2bbc7f2238348437161a3306932f42fd4017e5/succeeding-with-remote-retros.jpg)
+![](/assets/images/succeeding-with-remote-retros.jpg)
 
 Obviously 2020 has been a challenging year all round.
 
@@ -129,7 +129,7 @@ When at least one participant is remote, this low fidelity approach
 breaks down. An online tool is needed. Whilst general purpose tools can
 be used, I favour one that is built for the purpose.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBUdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--43a9185ed839e614dd5503de3b3fa9ef47a58fa7/favourite-remote-retro-tool.jpg)
+![](/assets/images/favourite-remote-retro-tool.jpg)
 
 A couple of months ago this tweet posed a question about which remote
 retro tool people preferred. Now at this point I need to disclose that I
