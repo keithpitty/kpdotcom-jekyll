@@ -9,7 +9,7 @@ A few weeks ago, [James Healy](https://twitter.com/jim_healy), my
 colleague at [The Conversation](https://theconversation.com/au), alerted
 the team to the following tweet from Kent Beck.
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a015d333793597c0cec8c5bf7f3fe902e5fc89c6/KentBeckIncrementsHonestyKindnessTweet.jpg)](https://twitter.com/KentBeck/status/675800995427827712)
+[![](/assets/images/KentBeckIncrementsHonestyKindnessTweet.jpg)](https://twitter.com/KentBeck/status/675800995427827712)
 
 Fast forward to the present and I find myself reflecting on [Ruby Conf
 AU](http://rubyconf.org.au/2016), held on the Gold Coast recently.
@@ -141,14 +141,10 @@ Jacoby](https://twitter.com/robjacoby) and [Trish
 Jacoby](https://twitter.com/TrishJacoby), together with the volunteers
 for their thoughtfulness and kindness.
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBPUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ce01543e67e8b579cbe6259b74bd935c7eff5d50/richie-in-the-pool.jpg)
+![](/assets/images/richie-in-the-pool.jpg)
 
-<figcaption>
-
-Richie Khoo, one of the [Ruby Australia](http://ruby.org.au/) founders,
-enjoys a refreshing swim in Springbrook National Park
-
-</figcaption>
+*Richie Khoo, one of the [Ruby Australia](http://ruby.org.au/) founders,
+enjoys a refreshing swim in Springbrook National Park*
 
 ## In Closing
 
