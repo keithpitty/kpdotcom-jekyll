@@ -11,7 +11,7 @@ It is [World Mental Health
 Day](http://www.who.int/mental_health/world-mental-health-day/en/) and I
 am [fulfilling a pledge](https://1010.org.au/content/promise-5905).
 
-![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--29f12e963cc9042a6740f38fd4f4745697940ea2/wmhd-2014-pledge.jpg)
+![](/assets/images/wmhd-2014-pledge.jpg)
 
 Why do I find it poignant?
 
@@ -148,7 +148,7 @@ to solve a programming problem will understand this. Jamie Forrest’s
 expression of this aspect of the life of a software developer certainly
 struck a chord with others!
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--16e55f6b86542f042b0b365fc2797e697b68d116/coding-oscillation.jpg)](https://twitter.com/jamieforrest/status/334279984321544192)
+[![](/assets/images/coding-oscillation.jpg)](https://twitter.com/jamieforrest/status/334279984321544192)
 
 ## Hope for a Better Balance
 
@@ -180,7 +180,7 @@ to raise money for [Suicide Prevention
 Australia](http://suicidepreventionaust.org/). Please feel free to
 [donate](https://springcycle2014.everydayhero.com/au/ride-for-rob).
 
-[![](https://keithpitty.com/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBNdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e315040591411d40f11a94e4699318182cb233c0/ride-for-rob.jpg)](https://springcycle2014.everydayhero.com/au/ride-for-rob)
+[![](/assets/images/ride-for-rob.jpg)](https://springcycle2014.everydayhero.com/au/ride-for-rob)
 
 **Disclaimer:** This article is based on my own life as a software
 developer who has experienced mental illness. Whilst I do hold a
