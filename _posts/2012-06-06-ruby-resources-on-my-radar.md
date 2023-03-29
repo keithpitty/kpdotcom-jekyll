@@ -105,8 +105,8 @@ programming with Ruby, I thoroughly recommend *Practicing Ruby*.
 
 In fact, it was within a *Practicing Ruby* article about *SOLID Design
 Principles* that I first came across the excellent work of Sandi Metz
-through a recommendation Gregory gave about a talk she gave at GoRuCo in
-2009. Now Sandi is in the process of releasing her book, [Practical
+through a recommendation Gregory gave about a talk she gave at GoRuCo in 2009. 
+Now Sandi is in the process of releasing her book, [Practical
 Object-Oriented Design in
 Ruby](http://my.safaribooksonline.com/book/programming/ruby/9780132930895).
 Sandi shows how to design Ruby classes so that programmers who use your
