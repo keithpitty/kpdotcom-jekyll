@@ -22,71 +22,67 @@ Install the oniguruma system library (see link in the plugin README).
 Install the [ultraviolet](http://ultraviolet.rubyforge.org/) gem, which
 will also install the textpow and oniguruma gems.
 
-<code>sudo gem install ultraviolet</code>
+`sudo gem install ultraviolet`
 
 ### 1. Install the Plugin
 
-<code>./script/plugin install
-git://github.com/arya/tm_syntax_highlighting</code>
+`./script/plugin install git://github.com/arya/tm_syntax_highlighting`
 
 ### 2. Copy all themes from ultraviolet:
 
-<code>./script/generate syntax_css</code>
+`./script/generate syntax_css`
 
 ### 3. Create defaults initializer
 
-<code lang='ruby'>
-
-1.  config/initializers/tm_syntax.rb  
-    TmSyntaxHighlighting.defaults = {:theme =\> “mac_classic”,
-    :line_numbers =\> false, :lang =\> “ruby”}  
-    </code>
+```ruby
+# config/initializers/tm_syntax.rb  
+TmSyntaxHighlighting.defaults = {:theme => "mac_classic", :line_numbers => false, :lang => "ruby"}  
+```
 
 ### 4. Create an application helper method to parse the Textile and code:
 
 Note: I have used “c0de” instead of “code” here just to enable this code
 to be parsed!
 
-<code lang='ruby'>
-
-1.  app/helpers/application_helper.rb  
-    def parse_textile_and_code_syntax(text)  
-    text_pieces =
-    text.split(/(<c0de>\|<c0de lang="[A-Za-z0-9_-]+">\|<c0de lang='[A-Za-z0-9_-]+'>\|\<\\c0de\>)/)  
-    in_pre = false  
-    language = nil  
-    text_pieces.collect do \|piece\|  
-    if piece =~ /^\<c0de( lang=(\[“’\])?(.\*)\2)?\>$/  
-    language = $3  
-    in_pre = true  
-    nil  
-    elsif piece == ”</c0de>”  
-    in_pre = false  
-    language = nil  
-    nil  
+```ruby
+# app/helpers/application_helper.rb  
+def parse_textile_and_code_syntax(text)  
+  text_pieces = text.split((<c0de>|<c0de lang="[A-Za-z0-9_-]+">|<c0de lang='[A-Za-z0-9_-]+'>|<\/c0de>)/)  
+  in_pre = false  
+  language = nil  
+  text_pieces.collect do |piece|  
+    if piece =~ /^<c0de( lang=(["’\])?(.*)\2)?>$/  
+      language = $3  
+      in_pre = true  
+      nil  
+    elsif piece == "</c0de>"  
+      in_pre = false  
+      language = nil  
+      nil  
     elsif in_pre  
-    code(piece.strip, :lang =\> language, :theme =\> “mac_classic”)  
+      code(piece.strip, :lang => language, :theme => "mac_classic")  
     else  
-    RedCloth.new(piece.strip).to_html  
+      RedCloth.new(piece.strip).to_html  
     end  
-    end  
-    end  
-    </code>
+  end  
+end  
+```  
 
 ### 5. Use the helper in the views
 
-<code lang='ruby_on_rails'>\<%=
-parse_textile_and_code_syntax(@blog_post.post) %\></code>
+```erb
+parse_textile_and_code_syntax(@blog_post.post) %>
+```
 
 ### 6. Add CSS for horizontal scrolling
 
-<code lang='css'>  
+```css
 pre {  
-margin: 10px 10px;  
-padding: 10px 10px;  
-line-height: 15px;  
-overflow: auto;  
-font-family: “Monaco”, “Courier New”, courier;  
-font-size: 12px;  
+  margin: 10px 10px;  
+  padding: 10px 10px;  
+  line-height: 15px;  
+  overflow: auto;  
+  font-family: "Monaco", "Courier New", courier;  
+  font-size: 12px;  
 }  
-</code>
+```
