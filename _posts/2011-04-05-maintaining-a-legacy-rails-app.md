@@ -14,9 +14,10 @@ Bundler.
 
 One of the delights of last night’s deployment was having to update
 RubyGems on the target machine. Usually this is as simple as:  
-<code>  
+
+```
 gem update —system  
-</code>
+```
 
 That is, unless you are forced to upgrade to a specific, old release of
 RubyGems. Being at Rails 2.3.5 with this app, we were [in this
