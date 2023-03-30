@@ -28,29 +28,29 @@ invaluable.
 
 For simplicity’s sake, let’s say my controller was:
 
-<code lang='ruby'>  
-class BackendController \< ApplicationController  
-wsdl_service_name ‘Backend’  
-web_service_api BackendApi  
-web_service_scaffold :invoke if Rails.env == ‘development’
+```ruby
+class BackendController < ApplicationController  
+  wsdl_service_name 'Backend'  
+  web_service_api BackendApi  
+  web_service_scaffold :invoke if Rails.env == 'development'
 
-def foo_bar(args)  
-\# method code goes here  
+  def foo_bar(args)  
+    # method code goes here  
+  end  
 end  
-end  
-</code>
+```
 
 And here is an XML-RPC test client:
 
-<code lang='ruby'>  
-require ‘xmlrpc/client’  
-require ‘pp’
+```ruby
+require 'xmlrpc/client'  
+require 'pp'
 
-server = XMLRPC::Client.new2(“http://example.com/backend/api”)  
-result = server.call(“FooBar”, \[“arg1”, “arg2”, “arg3”\])
+server = XMLRPC::Client.new2("http://example.com/backend/api")  
+result = server.call("FooBar", \["arg1", "arg2", "arg3"\])
 
 pp result  
-</code>
+```
 
 Notice that the call is to a method called “FooBar” whereas the method
 within the Rails controller is called “foo_bar”. If you’re like me you
