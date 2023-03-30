@@ -24,17 +24,15 @@ encouraged to read the first paragraph:
 Well, almost. CapGun does “just work” once you’ve configured it
 correctly. Included in the config sample to be added to deploy.rb was:
 
-<code lang='ruby'>
-
-1.  define the options for the actual emails that go out — :recipients
-    is the only required option  
-    set :cap_gun_email_envelope, { :recipients =\> %w\[joe@example.com,
-    jane@example.com\] }  
-    </code>
+```ruby
+# define the options for the actual emails that go out — :recipients is the only required option  
+set :cap_gun_email_envelope, { :recipients => %w[joe@example.com, jane@example.com] }  
+```
 
 Unfortunately this was not quite complete enough for CapGun to work.
 Instead it died deep in the bowels of net/smtp.rb:
 
+```
     /usr/local/lib/ruby/1.8/net/smtp.rb:930:in `check_response': 555 5.5.2 Syntax error. 7sm1592402qwb.55 (Net::SMTPFatalError)
         from /usr/local/lib/ruby/1.8/net/smtp.rb:899:in `getok'
         from /usr/local/lib/ruby/1.8/net/smtp.rb:828:in `mailfrom'
@@ -46,6 +44,7 @@ Instead it died deep in the bowels of net/smtp.rb:
         from /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.3.4/lib/action_mailer/base.rb:523:in `deliver!'
         from /usr/local/lib/ruby/gems/1.8/gems/actionmailer-2.3.4/lib/action_mailer/base.rb:395:in `method_missing'
         from ./vendor/plugins/cap_gun/lib/cap_gun.rb:70
+```
 
 The lesson was that the **:cap_gun_email_envelope** needed to be
 configured with **:from** as well as **:recipients**. And the good news
