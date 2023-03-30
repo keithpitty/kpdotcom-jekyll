@@ -40,24 +40,7 @@ format via REST, XML Builder and a presenter object. Whilst the example
 is contrived, the technique is one that I used to handle a requirement
 for a client recently.
 
-Here are the slides:
-
-<div style="width:425px;text-align:left" id="__ss_1567510">
-
-<a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/keithpitty/using-rest-and-xml-builder-for-legacy-xml?type=powerpoint" title="Using REST and XML Builder for legacy XML">Using
-REST and XML Builder for legacy
-XML</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=rest-xml-builder-090611072632-phpapp02&stripped_title=using-rest-and-xml-builder-for-legacy-xml" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=rest-xml-builder-090611072632-phpapp02&stripped_title=using-rest-and-xml-builder-for-legacy-xml" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
-
-<div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">
-
-View more
-<a style="text-decoration:underline;" href="http://www.slideshare.net/">PDF
-documents</a> from
-<a style="text-decoration:underline;" href="http://www.slideshare.net/keithpitty">Keith
-Pitty</a>.
-
-</div>
-</div>
+Here are the [slides](https://www.slideshare.net/keithpitty/using-rest-and-xml-builder-for-legacy-xml).
 
 In fairness, I must give credit to Obie Fernandez for his coverage of
 XML Builder in his book, *The Rails Way*, which gave me a head start.
