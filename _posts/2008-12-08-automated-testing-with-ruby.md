@@ -9,25 +9,7 @@ The fifth Australian Open Source Developers’ Conference was held last
 week in Sydney. In addition to helping organise the conference, I was
 fortunate enough to be one of the Ruby presenters.
 
-<div style="width:425px;text-align:left" id="__ss_816258">
-<object style="margin:0px" width="425" height="355">
-
-<param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=automated-testing-with-ruby-1228363625991723-8&stripped_title=automated-testing-with-ruby-presentation" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=automated-testing-with-ruby-1228363625991723-8&stripped_title=automated-testing-with-ruby-presentation" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
-
-<div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">
-
-View SlideShare
-<a style="text-decoration:underline;" href="http://www.slideshare.net/keithpitty/automated-testing-with-ruby-presentation?type=powerpoint" title="View Automated Testing with Ruby on SlideShare">presentation</a>
-or
-<a style="text-decoration:underline;" href="http://www.slideshare.net/upload?type=powerpoint">Upload</a>
-your own. (tags:
-<a style="text-decoration:underline;" href="http://slideshare.net/tag/osdc">osdc</a>
-<a style="text-decoration:underline;" href="http://slideshare.net/tag/osdc2008au">osdc2008au</a>)
-
-</div>
-</div>
-
-Naturally, these slides were designed to assist my presentation rather
+Naturally, these [slides](https://www.slideshare.net/keithpitty/automated-testing-with-ruby-presentation) were designed to assist my presentation rather
 than contain all the content. Indeed, the inclusion of some of the
 slides may beg some questions so I thought it may be helpful to add some
 explanation here.
