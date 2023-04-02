@@ -29,8 +29,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick"
 gem "jekyll-postcss"
 
-gem "jekyll-import", path: '/Users/keithpitty/code/jekyll-import'
-gem "sequel"
-gem "pg"
 gem "kramdown"
 gem "rouge"
