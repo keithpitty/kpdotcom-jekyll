@@ -1,12 +1,12 @@
 - name: Home
   link: /
 - name: Blog
-  link: /blog
+  link: /blog/
 - name: Archives
   link: /blog/archives
 - name: About
-  link: /about
+  link: /about/
 - name: Testimonials
-  link: /testimonials
+  link: /testimonials/
 - name: Contact
-  link: /contact
+  link: /contact/

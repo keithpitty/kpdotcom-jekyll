@@ -1,9 +1,13 @@
 <ul class="list-reset lg:flex justify-end flex-1 items-center">
   {% for item in site.data.navigation %}
-    <li>
-      <a href="{{ item.link }}" {% if page.url == item.link %}class="text-white hover:text-white pr-4"{% else %}class="text-blue-300 hover:text-white pr-4"{% endif %}>
-        {{ item.name }}
-      </a>
-    </li>
+    {% if page.url contains "/blog/archives/" and item.link == "/blog/" %}
+      <li><a href="{{ item.link }}" class="text-white hover:text-white pr-4">Blog</a></li>
+    {% else %}
+      <li>
+        <a href="{{ item.link }}" {% if page.url == item.link %}class="text-white hover:text-white pr-4"{% else %}class="text-blue-300 hover:text-white pr-4"{% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
