@@ -33,5 +33,11 @@
     <div class="container mx-auto px-12 pb-6">
       <p>&copy; {{ site.time | date: '%Y' }} Keith Pitty, all rights reserved.</p>
     </div>
+
+    <script>
+      document.getElementById('nav-toggle').onclick = function(){
+        document.getElementById("nav-content").classList.toggle("hidden");
+      }
+    </script>
   </body>
 </html>
