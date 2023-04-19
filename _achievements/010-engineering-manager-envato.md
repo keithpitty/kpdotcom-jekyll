@@ -6,10 +6,24 @@ heading: Engineering Manager, Envato (2021 - present)
 I joined [Envato](https://envato.com/) in July 2021 in the role of an
 Engineering Manager.
 
-Having spent most of my first year in the Infrastructure team, in June
-2022, following a company-wide restructure, I moved to a Tech Services
-team. In September 2022 I moved to the Market team. Watch this space for
-further details.
+Having spent most of my first year in the Infrastructure team, in 
+mid-2022, following a company-wide restructure, I briefly moved to a 
+Tech Services team before moving to the Market team.
+
+During my time in the Market team, I have:
+
+- managed six direct reports
+- co-managed the Market team
+- contributed to improvements in the team's processes
+- collaborated with the team's Product Manager to plan, prioritise
+  and track maintenance, tactical and strategic initiatives
+- collaborated with another Engineering Manager to introduce more
+  Engineers to the on-call roster
+- provided guidance to Engineers who have been leading initiatives
+- facilitated Envato's sponsorship of, and involvement in RubyConf AU 2023
+- facilitated Envato's Tech Leadership Book Club
+- collaborated with others to improve Envato's Incident Management
+  capabilities
 
 Whilst in the Infrastructure team, my work included:
 
