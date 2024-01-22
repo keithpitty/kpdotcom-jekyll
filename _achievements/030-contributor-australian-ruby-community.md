@@ -6,18 +6,18 @@ heading: Contributor, Australian Ruby Community (2006 - present)
 Since late 2006 I have been a keen participant in the Australian Ruby
 community.
 
-Most recently, I was delighted to present a talk entitled [*What were
-they
+Most recently, I facilitated Envato's sponsorship of RubyConf Australia 2023.
+
+At [RubyConf Australia 2019](https://rubyconf.org.au/2019), I was delighted to present
+a talk entitled [*What were they
 thinking?*](https://keithpitty.com/blog/archives/2019-02-20-reflecting-on-rubyconf-au-2019)
-at [RubyConf Australia 2019](https://rubyconf.org.au/2019).
 
 One of the highlights of my career was leading the organisation of
 [RubyConf Australia 2013](http://www.rubyconf.org.au/2013), the
 inaugural Ruby conference in Australia, which was held in Melbourne in
 February 2013. This conference was held yearly until the pandemic,
-attracting speakers from all over the globe. Hopefully [Ruby
-Australia](https://ruby.org.au/) will be able to revive RubyConfAU in
-the not too distant future.
+attracting speakers from all over the globe. Thankfully [Ruby
+Australia](https://ruby.org.au/) was able to revive RubyConf AU in 2023.
 
 I also:
 
