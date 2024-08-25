@@ -1,10 +1,11 @@
 ---
 layout: none
-heading: Contributor, Australian Ruby Community (2006 - present)
+heading: Contributor, Australian Ruby Community (2006 - 2023)
 ---
 
-Since late 2006 I have been a keen participant in the Australian Ruby
-community.
+In 2006 I began a long involvement in the Australian Ruby community.
+After many contributions over the years my participation is now more
+occasional.
 
 Most recently, I facilitated Envato's sponsorship of RubyConf Australia 2023.
 
