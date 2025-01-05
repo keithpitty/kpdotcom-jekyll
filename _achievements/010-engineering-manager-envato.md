@@ -4,11 +4,24 @@ heading: Engineering Manager, Envato (2021 - present)
 ---
 
 I joined [Envato](https://envato.com/) in July 2021 in the role of an
-Engineering Manager.
+Engineering Manager. Read on to learn more of my achievements, which are
+listed in reverse chronological order.
 
-From July 2024 I managed a Find Experience team of six engineers 
-within the Search and Content Management domain. Watch this space for
-further details in due course.
+From July 2024 I managed a Find Experience team
+within the Search and Content Management domain.
+
+So far in this team I have:
+
+- managed six direct reports
+- collaborated with a Product Manager, Lead Designer and Lead Engineer
+to review, track and plan the team's progress on specific initiatives
+- demonstrated accountability for the team's delivery plans
+- overseen the team's delivery of Envato's
+[Sounds Like search](https://www.envato.com/blog/find-your-perfect-music-match-with-envatos-sounds-like-search/)
+feature
+- overseen the team's progress towards delivering more Music Uplift initiatives
+- facilitated the organisation of shared maintenance of two core applications
+across several teams within the Search and Content Management domain
 
 In mid-2022, following a company-wide restructure, I briefly moved to a 
 Tech Services team before moving to the Market team.
