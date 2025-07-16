@@ -87,8 +87,8 @@ some other reactions I've had in my career.
 
 I've come to realise that, whilst I have no control over some decisions which lead to 
 major organisational change, I can decide how I respond. If I choose to stay, seeking
-to understand can help me accept the change and move on. The book _"Surviving Change"_ [^2]
-explores this aspect on more detail.
+to understand can help me accept the change and move on. The book _"Surviving Change at Work"_ [^2]
+explores this aspect in more detail.
 
 ## In Conclusion
 
