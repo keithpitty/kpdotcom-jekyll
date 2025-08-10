@@ -40,7 +40,7 @@ I know I haven't always behaved in a way that I'm proud of in these circumstance
 
 There have been times when I've been convinced that a decision was wrong and allowed my
 conviction to spill over into expressing my point of view in an argumentative, passionate
-way that was unlikely to have any impact on the decision. All it did was did a deeper hole
+way that was unlikely to have any impact on the decision. All it did was dig a deeper hole
 of personal frustration! And it was unlikely to improve my reputation within the organisation.
 
 I guess I'm human!
