@@ -12,7 +12,7 @@ Australia 2015](http://rubyconf.org.au/2015) in Melbourne.
 ![](/assets/images/llc-slide-1.jpg)
 
 See [slides](https://speakerdeck.com/keithpitty/loving-legacy-code) and
-[video](https://rubyconf.eventer.com/rubyconf-australia-2015-1223/loving-legacy-code-by-keith-pitty-1718).
+[video](https://www.rubyevents.org/talks/loving-legacy-code).
 
 ## A Quick Recap
 
