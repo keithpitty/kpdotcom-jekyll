@@ -1,25 +1,35 @@
 ---
 layout: none
-heading: Engineering Manager, Envato (2021 - present)
+heading: Engineering Manager, Envato (2021 - 2025)
 ---
 
 I joined [Envato](https://envato.com/) in July 2021 in the role of an
 Engineering Manager. Read on to learn more of my achievements, which are
 listed in reverse chronological order.
 
-From July 2024 I managed a Find Experience team
+For the last couple of months before my retirement, following a
+restructure, I focussed on assisting the formation of the Elements
+Platform team. A key aspect of my contribution was facilitating the
+adaptation of processes for this team and the new domain within which
+it operated.
+
+For three months in early 2025, I managed an additional team within
+the Search and Content Management domain. My role was essentially to
+strengthen this team before handing it over to a new Engineering Manager.
+
+From July 2024 until October 2025 I managed a team
 within the Search and Content Management domain.
 
-So far in this team I have:
+During this time I:
 
 - managed six direct reports
 - collaborated with a Product Manager, Lead Designer and Lead Engineer
 to review, track and plan the team's progress on specific initiatives
 - demonstrated accountability for the team's delivery plans
-- overseen the team's delivery of Envato's
+- oversaw the team's delivery of Envato's
 [Sounds Like search](https://www.envato.com/blog/find-your-perfect-music-match-with-envatos-sounds-like-search/)
 feature
-- overseen the team's progress towards delivering more Music Uplift initiatives
+- oversaw the team's delivery of more Music Uplift and Search initiatives
 - facilitated the organisation of shared maintenance of two core applications
 across several teams within the Search and Content Management domain
 
@@ -41,11 +51,11 @@ During my time in the Market team, I:
 - collaborated with others to improve Envato's Incident Management
   capabilities
 
-From July 2021 until June 2023 I co-managed the Infrastructure team.
+From July 2021 until June 2023 I co-managed the Growth Infrastructure team.
 My work included:
 
 -   managing seven direct reports
--   sharing the management of the Infrastructure team with another
+-   sharing the management of the Growth Infrastructure team with another
     Engineering Manager
 -   leading improvements to the team’s workflow processes
 -   giving a presentation to leaders within the Engineering cohort about
@@ -53,7 +63,7 @@ My work included:
 -   developing working relationships with vendors
 -   facilitating the revision of on-call and technical support rosters
 -   hiring new Site Reliability Engineers and introducing them to Envato
-    and the Infrastructure team
+    and the Growth Infrastructure team
 -   facilitating team retrospectives
 -   familiarising myself with the infrastructure that the team’s SREs
     supported
