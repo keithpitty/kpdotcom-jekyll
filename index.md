@@ -30,4 +30,4 @@ Or you can see some of my code at [GitHub](https://github.com/keithpitty).
 
 ## What do I do?
 
-I currently work for [Envato](https://envato.com/) as an Engineering Manager.
+Having worked in many [roles](/about) from 1983 until December 2025, I am now retired.
