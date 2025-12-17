@@ -8,3 +8,4 @@ import-from-db
 tomd
 tomd_post.awk
 tomd_pre.awk
+.DS_Store
