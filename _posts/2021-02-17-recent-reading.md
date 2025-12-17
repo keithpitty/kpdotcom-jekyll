@@ -89,7 +89,7 @@ helpful OKRs can be.
 
 ### Elixir in Action, Second Edition
 
-*By Sa&scaron;a Juri&cacute;*
+*By Sa&scaron;a Juric*
 
 I’ve been maintaining and enhancing an Elixir application at work for
 the last 18 months or so.
